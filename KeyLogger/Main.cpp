@@ -41,6 +41,7 @@ bool Key_is_Listed(WORD iKey)
 		std::cout << "\b";
 		WriteToFile("\b");
 		break;
+		
 
 	case VK_ESCAPE:
 		std::cout << "*Esc*";
