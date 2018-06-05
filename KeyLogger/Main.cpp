@@ -82,6 +82,10 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile("Delete");
 		break;
 
+	case 'A':
+		std::cout << "A";
+		WriteToFile("A");
+		break;
 
 	case VK_RBUTTON:
 		std::cout << "* mouse_right *";
