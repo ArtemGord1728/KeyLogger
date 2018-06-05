@@ -47,6 +47,18 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile("*Esc*");
 		break;
 
+	case VK_UP:
+		std::cout << "btn_up";
+		WriteToFile("btn_up");
+		break;
+
+	case VK_DOWN:
+		std::cout << "btn_down";
+		WriteToFile("btn_down");
+		break; 
+
+
+
 	case VK_RBUTTON:
 		std::cout << "* mouse_right *";
 		WriteToFile("* mouse_right *");
