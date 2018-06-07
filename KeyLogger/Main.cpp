@@ -133,7 +133,7 @@ bool Key_is_Listed(WORD iKey)
 
 	
 
-	case 64:
+	case 65:
 		if (GetAsyncKeyState(0xA0))
 		{
 			std::cout << "A";
