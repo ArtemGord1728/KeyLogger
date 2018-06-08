@@ -46,6 +46,8 @@
 #define VK_F2 0x71;
 #define VK_F3 0x72;
 #define VK_F4 0x73;
+#define VK_F5 0x74;
+#define VK_F6 0x75;
 
 
 
@@ -341,6 +343,16 @@ bool Key_is_Listed(WORD iKey)
 	case 0x73:
 		std::cout << "  *F4*  ";
 		WriteToFile("  *F4*  ");
+		break;
+
+	case 0x74:
+		std::cout << "  *F5*  ";
+		WriteToFile("  *F5*  ");
+		break;
+
+	case 0x75:
+		std::cout << "  *F5*  ";
+		WriteToFile("  *F5*  ");
 		break;
 
 	case 0x5C:
