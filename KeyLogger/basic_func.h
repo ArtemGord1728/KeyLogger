@@ -10,7 +10,6 @@
 #define VK_MULTIPLY 0x6A;
 #define VK_SPACE 0x20;
 #define VK_ADD 0x6B;
-#define VK_F1 0x70;
 #define VK_TAB 0x09;
 #define VK_LWIN 0x5B;
 #define VK_RETURN 0x0D;
@@ -45,6 +44,7 @@
 #define VK_NUMPAD8 0x68;
 #define VK_NUMPAD9 0x69;
 #define VK_RWIN 0x5C;
+#define VK_F1 0x70;
 #define VK_F2 0x71;
 #define VK_F3 0x72;
 #define VK_F4 0x73;
@@ -56,6 +56,10 @@
 #define VK_F10 0x79;
 #define VK_F11 0x7A;
 #define VK_F12 0x7B;
+#define VK_HOME 0x24;
+#define VK_NUMLOCK 0x90;
+
+
 
 class K_Logger
 {
