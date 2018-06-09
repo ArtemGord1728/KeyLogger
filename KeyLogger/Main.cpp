@@ -288,7 +288,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 
-
+		case 0x70:
+			std::cout << "  *F1*  ";
+			WriteToFile("  *F1*  ");
+			break;
 
 		case 0x71:
 			std::cout << "  *F2*  ";
