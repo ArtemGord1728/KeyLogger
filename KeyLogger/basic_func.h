@@ -58,7 +58,7 @@
 #define VK_F12 0x7B;
 #define VK_HOME 0x24;
 #define VK_NUMLOCK 0x90;
-
+#define VK_END 0x23;
 
 
 class K_Logger

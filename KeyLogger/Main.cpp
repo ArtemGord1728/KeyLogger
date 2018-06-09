@@ -343,6 +343,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("  *F11*  ");
 			break;
 
+		case 0x23:
+			std::cout << "  *END*  ";
+			WriteToFile("  *END*  ");
+			break;
 
 		case 0x7B:
 			std::cout << "  *F12*  ";
