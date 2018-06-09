@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{45B3FC69-EAA6-4712-A4AB-4BC1EF748A1A}</ProjectGuid>
-    <RootNamespace>KeyLogger</RootNamespace>
+    <ProjectGuid>{4C6D57B6-854E-4DBD-8482-25AF7127F1BC}</ProjectGuid>
+    <RootNamespace>Keylogger</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

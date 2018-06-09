@@ -573,7 +573,7 @@ bool Key_is_Listed(WORD iKey)
 		break;
 
 	default:
-		std::cout << " Неизвестный символ ";
+		std::cout << " Unknown character ";
 		return false;
 		break;
 	}
