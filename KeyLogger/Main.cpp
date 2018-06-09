@@ -449,11 +449,6 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("+");
 			break;
 
-		case 0x70:
-			std::cout << " *F1* ";
-			WriteToFile(" *F1* ");
-			break;
-
 		case 0x09:
 			std::cout << " *TAB* ";
 			WriteToFile(" *TAB* ");
