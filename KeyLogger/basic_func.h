@@ -66,4 +66,5 @@ class K_Logger
 public:
 	void WriteToFile(LPCSTR text);
 	int SaveSymbol(WORD iKey);
+	void VisibilityApp();
 };

@@ -773,7 +773,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 	return 0;
 }
 
-void VisibilityApp()
+void K_Logger::VisibilityApp()
 {
 	HWND stealth;
 	AllocConsole();
