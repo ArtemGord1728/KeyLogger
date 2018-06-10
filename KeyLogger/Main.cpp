@@ -479,6 +479,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 				std::cout << "Z";
 				WriteToFile("Z");
 			}
+			else
+			{
+				std::cout << "z";
+				WriteToFile("z");
+			}
 			break;
 
 	
