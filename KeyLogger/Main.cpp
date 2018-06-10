@@ -466,6 +466,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 				std::cout << "Y";
 				WriteToFile("Y");
 			}
+			else
+			{
+				std::cout << "y";
+				WriteToFile("y");
+			}
 			break;
 
 		case 90:
