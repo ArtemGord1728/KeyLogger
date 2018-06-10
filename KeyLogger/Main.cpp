@@ -349,6 +349,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 				std::cout << "P";
 				WriteToFile("P");
 			}
+			else
+			{
+				std::cout << "p";
+				WriteToFile("p");
+			}
 			break;
 
 		case 81:
@@ -356,6 +361,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 			{
 				std::cout << "Q";
 				WriteToFile("Q");
+			}
+			else
+			{
+				std::cout << "q";
+				WriteToFile("q");
 			}
 			break;
 
@@ -365,6 +375,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 				std::cout << "R";
 				WriteToFile("R");
 			}
+			else
+			{
+				std::cout << "r";
+				WriteToFile("r");
+			}
 			break;
 
 		case 83:
@@ -373,6 +388,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 				std::cout << "S";
 				WriteToFile("S");
 			}
+			else
+			{
+				std::cout << "s";
+				WriteToFile("s");
+			}
 			break;
 
 		case 84:
@@ -380,6 +400,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 			{
 				std::cout << "T";
 				WriteToFile("T");
+			}
+			else
+			{
+				std::cout << "t";
+				WriteToFile("t");
 			}
 			break;
 
