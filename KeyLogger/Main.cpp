@@ -1,6 +1,23 @@
 #include "basic_func.h"
 
 
+/*******************************************************************/
+
+/* Original File Name: MainWindow.cpp                              */
+
+/* Date: 10-06-2018                                                */
+
+/* Developer: Artem Gord1728                                       */
+
+/* Copyright © 2018 Artem Gord1728. All rights reserved.           */
+
+/* Description: Code with basic functionality                      */
+
+/*******************************************************************/
+
+
+
+
 void K_Logger::WriteToFile(LPCSTR text)
 {
 	std::ofstream doc_to;
