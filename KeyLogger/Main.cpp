@@ -3,8 +3,6 @@
 
 /*******************************************************************/
 
-/* Original File Name: MainWindow.cpp                              */
-
 /* Date: 10-06-2018                                                */
 
 /* Developer: Artem Gord1728                                       */

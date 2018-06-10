@@ -1,5 +1,21 @@
 #pragma once
 
+
+/*******************************************************************/
+
+/* Date: 10-06-2018                                                */
+
+/* Developer: Artem Gord1728                                       */
+
+/* Copyright © 2018 Artem Gord1728. All rights reserved.           */
+
+/* Description: Header with basic functionality                    */
+
+/*******************************************************************/
+
+
+
+
 #include <iostream>
 #include <Windows.h>
 #include <fstream>
