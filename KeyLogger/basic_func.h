@@ -40,8 +40,6 @@
 #define VK_CONTROL 0x11
 #define VK_RBUTTON 0x02;
 #define VK_LBUTTON 0x01;
-#define VK_LSHIFT 0xA0;
-#define VK_RSHIFT 0xA1;
 #define VK_CAPITAL 0x14;
 #define VK_SNAPSHOT 0x2c; 
 #define VK_LMENU 0xA4;
