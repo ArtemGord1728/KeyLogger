@@ -23,9 +23,7 @@
 #include <time.h>
 
 
-#define VK_MULTIPLY 0x6A;
 #define VK_SPACE 0x20;
-#define VK_ADD 0x6B;
 #define VK_TAB 0x09;
 #define VK_LWIN 0x5B;
 #define VK_RETURN 0x0D;
@@ -44,20 +42,6 @@
 #define VK_SNAPSHOT 0x2c; 
 #define VK_LMENU 0xA4;
 #define VK_MBUTTON 0x04; 
-#define VK_DIVIDE 0x6F;
-#define VK_SUBTRACT 0x6D;
-#define VK_DECIMAL 0x6E; 
-#define VK_NUMPAD0 0x60;
-#define VK_NUMPAD1 0x61;
-#define VK_NUMPAD2 0x62;
-#define VK_NUMPAD3 0x63;
-#define VK_NUMPAD4 0x64;
-#define VK_NUMPAD5 0x65;
-#define VK_NUMPAD6 0x66;
-#define VK_NUMPAD7 0x67;
-#define VK_NUMPAD8 0x68;
-#define VK_NUMPAD9 0x69;
-#define VK_END 0x23;
 
 
 class K_Logger

