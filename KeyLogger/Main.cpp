@@ -7,7 +7,7 @@
 
 /* Developer: Artem Gord1728                                       */
 
-/* Copyright © 2018 Artem Gord1728. All rights reserved.           */
+/* Copyright: 2018 Artem Gord1728. All rights reserved.           */
 
 /* Description: Code with basic functionality                      */
 
