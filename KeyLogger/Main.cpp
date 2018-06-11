@@ -728,6 +728,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("  *PageUp*  ");
 			break;
 
+		case VK_NEXT:
+			std::cout << "  *PageDown*  ";
+			WriteToFile("  *PageDown*  ");
+			break;
+
 		case VK_ESCAPE:
 			std::cout << " *Esc* ";
 			WriteToFile(" *Esc* ");
