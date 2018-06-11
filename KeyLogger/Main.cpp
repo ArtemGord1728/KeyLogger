@@ -3,11 +3,11 @@
 
 /*******************************************************************/
 
-/* Date: 10-06-2018                                                */
+/* Date: 10.06.2018                                                */
 
 /* Developer: Artem Gord1728                                       */
 
-/* Copyright: 2018 Artem Gord1728. All rights reserved.           */
+/* Copyright: 2018 Artem Gord1728. All rights reserved.            */
 
 /* Description: Code with basic functionality                      */
 
