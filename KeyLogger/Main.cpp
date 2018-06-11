@@ -724,17 +724,17 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 
-		case 0x1B:
+		case VK_ESCAPE:
 			std::cout << " *Esc* ";
 			WriteToFile(" *Esc* ");
 			break;
 
-		case 0x26:
+		case VK_UP:
 			std::cout << " btn_up ";
 			WriteToFile(" btn_up ");
 			break;
 
-		case 0x28:
+		case VK_DOWN:
 			std::cout << " btn_down ";
 			WriteToFile(" btn_down ");
 			break;

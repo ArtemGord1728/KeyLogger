@@ -24,9 +24,6 @@
 
 
 #define VK_BACK 0x08;
-#define VK_ESCAPE 0x1B; 
-#define VK_UP 0x26;
-#define VK_DOWN 0x28;
 #define VK_DELETE 0x2E;
 #define VK_LEFT 0x25;
 #define VK_RIGHT 0x27;
