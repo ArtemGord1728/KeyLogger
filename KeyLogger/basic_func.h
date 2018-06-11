@@ -23,9 +23,6 @@
 #include <time.h>
 
 
-#define VK_BACK 0x08;
-#define VK_LMENU 0xA4;
-
 
 class K_Logger
 {
