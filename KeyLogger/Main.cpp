@@ -783,6 +783,11 @@ int K_Logger::SaveSymbol(WORD iKey)
 			std::cout << "*mouse_left*";
 			WriteToFile("*mouse_left*");
 			break;
+
+		default:
+			std::cout << "?";
+			WriteToFile("?");
+			break;
 	}
 	return 0;
 }
