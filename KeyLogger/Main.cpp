@@ -804,6 +804,9 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 
+	LPCWSTR fileName = L"D:\\HackFile";
+
+
 	char key;
 
 	K_Logger kl;
