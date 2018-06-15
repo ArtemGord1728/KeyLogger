@@ -21,8 +21,8 @@ void K_Logger::WriteToDoc(LPCSTR text)
 	LPCSTR fileName = "D:\\Hack";
 	LPCSTR fileNameTo = "D:\\Hack\\Hack.txt";
 
-	/*CreateDirectory(fileName, NULL);
-	CreateFile(fileNameTo, GENERIC_READ, FILE_SHARE_READ, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_ARCHIVE, NULL);*/
+	CreateDirectory(fileName, NULL);
+	CreateFile(fileNameTo, GENERIC_READ, FILE_SHARE_READ, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_ARCHIVE, NULL);
 
 	//Sleep(50);
 
