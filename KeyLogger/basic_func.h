@@ -21,7 +21,7 @@
 #include <fstream>
 #include <string>
 #include <time.h>
-
+#include <stdio.h>
 
 
 class K_Logger
