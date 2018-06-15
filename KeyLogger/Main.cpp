@@ -18,13 +18,14 @@
 void K_Logger::WriteToDoc(LPCSTR text)
 {
 	std::ofstream doc_to;
-	LPCSTR fileName = "D:\\Hack";
-	LPCSTR fileDoc = "D:\\Hack\\HackDoc.txt";
+	/*LPCSTR fileName = "D:\\Hack";
+	LPCSTR fileDoc = "D:\\Hack\\HackDoc.txt";*/
+	LPCSTR textDoc = "HackDoc.txt";
 
-	CreateDirectory(fileName, NULL);
-	CreateFile(fileDoc, GENERIC_READ, FILE_SHARE_READ, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_ARCHIVE, NULL);
+	/*CreateDirectory(fileName, NULL);
+	CreateFile(fileDoc, GENERIC_READ, FILE_SHARE_READ, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_ARCHIVE, NULL);*/
 
-	doc_to.open(fileDoc, std::fstream::app);
+	doc_to.open(textDoc, std::fstream::app);
 	doc_to << text;
 	doc_to.close();
 }
