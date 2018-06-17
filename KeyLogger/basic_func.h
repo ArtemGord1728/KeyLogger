@@ -30,5 +30,4 @@ public:
 	void WriteToDoc(const LPCSTR text);
 	int SaveSymbol(WORD iKey);
 	void VisibilityApp();
-
 };
