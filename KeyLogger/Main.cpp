@@ -530,67 +530,67 @@ int K_Logger::SaveSymbol(WORD iKey)
 		break;
 
 	case VK_F4:
-		std::cout << "  *F4*  ";
+		cout << "  *F4*  ";
 		WriteToDoc("  *F4*  ");
 		break;
 
 	case VK_F5:
-		std::cout << "  *F5*  ";
+		cout << "  *F5*  ";
 		WriteToDoc("  *F5*  ");
 		break;
 
 	case VK_F6:
-		std::cout << "  *F6*  ";
+		cout << "  *F6*  ";
 		WriteToDoc("  *F6*  ");
 		break;
 
 	case VK_F7:
-		std::cout << "  *F7*  ";
+		cout << "  *F7*  ";
 		WriteToDoc("  *F7*  ");
 		break;
 
 	case VK_F8:
-		std::cout << "  *F8*  ";
+		cout << "  *F8*  ";
 		WriteToDoc("  *F8*  ");
 		break;
 
 	case VK_F9:
-		std::cout << "  *F9*  ";
+		cout << "  *F9*  ";
 		WriteToDoc("  *F9*  ");
 		break;
 
 	case VK_F10:
-		std::cout << "  *F10*  ";
+		cout << "  *F10*  ";
 		WriteToDoc("  *F10*  ");
 		break;
 
 	case VK_F11:
-		std::cout << "  *F11*  ";
+		cout << "  *F11*  ";
 		WriteToDoc("  *F11*  ");
 		break;
 
 	case VK_F12:
-		std::cout << "  *F12*  ";
+		cout << "  *F12*  ";
 		WriteToDoc("  *F12*  ");
 		break;
 
 	case VK_END:
-		std::cout << "  *END*  ";
+		cout << "  *END*  ";
 		WriteToDoc("  *END*  ");
 		break;
 
 	case VK_HOME:
-		std::cout << "  *HOME*  ";
+		cout << "  *HOME*  ";
 		WriteToDoc("  *HOME*  ");
 		break;
 
 	case VK_NUMLOCK:
-		std::cout << "  *Num_Lock*  ";
+		cout << "  *Num_Lock*  ";
 		WriteToDoc("  *Num_Lock*  ");
 		break;
 
 	case VK_RWIN:
-		std::cout << "  *Right_Windows*  ";
+		cout << "  *Right_Windows*  ";
 		WriteToDoc("  *Right_Windows*  ");
 		break;
 
