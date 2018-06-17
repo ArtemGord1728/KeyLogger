@@ -656,22 +656,22 @@ int K_Logger::SaveSymbol(WORD iKey)
 		break;
 
 	case VK_SUBTRACT:
-		std::cout << "-";
+		cout << "-";
 		WriteToDoc("-");
 		break;
 
 	case VK_MULTIPLY:
-		std::cout << "*";
+		cout << "*";
 		WriteToDoc("*");
 		break;
 
 	case VK_DIVIDE:
-		std::cout << "/";
+		cout << "/";
 		WriteToDoc("/");
 		break;
 
 	case VK_ADD:
-		std::cout << "+";
+		cout << "+";
 		WriteToDoc("+");
 		break;
 		//+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
