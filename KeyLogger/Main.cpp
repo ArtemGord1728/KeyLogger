@@ -766,38 +766,38 @@ int K_Logger::SaveSymbol(WORD iKey)
 		break;
 
 	case VK_RIGHT:
-		std::cout << " btn_right ";
+		cout << " btn_right ";
 		WriteToDoc(" btn_right ");
 		break;
 
 	case VK_CONTROL:
-		std::cout << " btn_ctrl ";
+		cout << " btn_ctrl ";
 		WriteToDoc(" btn_ctrl ");
 		break;
 
 	case VK_INSERT:
-		std::cout << " Insert ";
+		cout << " Insert ";
 		WriteToDoc(" Insert ");
 		break;
 
 	case VK_DELETE:
-		std::cout << " *Delete* ";
+		cout << " *Delete* ";
 		WriteToDoc(" Delete ");
 		break;
 
 
 	case VK_RBUTTON:
-		std::cout << "*mouse_right*";
+		cout << "*mouse_right*";
 		WriteToDoc("*mouse_right*");
 		break;
 
 	case VK_LBUTTON:
-		std::cout << "*mouse_left*";
+		cout << "*mouse_left*";
 		WriteToDoc("*mouse_left*");
 		break;
 
 	default:
-		std::cout << "?";
+		cout << "?";
 		WriteToDoc("?");
 		break;
 	}
