@@ -24,13 +24,11 @@ void K_Logger::WriteToDoc(LPCSTR text)
 
 	if (CreateDirectory(fileName, NULL))
 	{
-		if (CreateFile(fileNameTo, GENERIC_READ, FILE_SHARE_WRITE, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_ARCHIVE, NULL))
+		if (CreateFile(fileNameTo, GENERIC_WRITE, FILE_SHARE_WRITE, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_ARCHIVE, NULL))
 		{
-
 			doc_to.open(fileNameTo, std::fstream::app);
 			doc_to << text;
-			doc_to.close();
-			
+			doc_to.close();	
 		}
 	}
 }
