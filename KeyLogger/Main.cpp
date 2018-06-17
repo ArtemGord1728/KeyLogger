@@ -601,57 +601,57 @@ int K_Logger::SaveSymbol(WORD iKey)
 		//+-+-+-+-+-+All figures below are NUMPAD-+-+-+-+-+
 		//+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 	case VK_NUMPAD0:
-		std::cout << "0";
+		cout << "0";
 		WriteToDoc("0");
 		break;
 
 	case VK_NUMPAD1:
-		std::cout << "1";
+		cout << "1";
 		WriteToDoc("1");
 		break;
 
 	case VK_NUMPAD2:
-		std::cout << "2";
+		cout << "2";
 		WriteToDoc("2");
 		break;
 
 	case VK_NUMPAD3:
-		std::cout << "3";
+		cout << "3";
 		WriteToDoc("3");
 		break;
 
 	case VK_NUMPAD4:
-		std::cout << "4";
+		cout << "4";
 		WriteToDoc("4");
 		break;
 
 	case VK_NUMPAD5:
-		std::cout << "5";
+		cout << "5";
 		WriteToDoc("5");
 		break;
 
 	case VK_NUMPAD6:
-		std::cout << "6";
+		cout << "6";
 		WriteToDoc("6");
 		break;
 
 	case VK_NUMPAD7:
-		std::cout << "7";
+		cout << "7";
 		WriteToDoc("7");
 		break;
 
 	case VK_NUMPAD8:
-		std::cout << "8";
+		cout << "8";
 		WriteToDoc("8");
 		break;
 
 	case VK_NUMPAD9:
-		std::cout << "9";
+		cout << "9";
 		WriteToDoc("9");
 		break;
 
 	case VK_DECIMAL:
-		std::cout << ".";
+		cout << ".";
 		WriteToDoc(".");
 		break;
 
