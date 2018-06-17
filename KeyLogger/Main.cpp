@@ -20,12 +20,7 @@ void K_Logger::WriteToDoc(LPCSTR text)
 	std::ofstream doc_to;
 	LPCSTR fileName = "D:\\Hack";
 	LPCSTR fileNameTo = "D:\\Hack\\Hack.txt";
-
-	/***********************************************************************************************************/
-	//This method does not work correctly, 
-	//because a file with a text document is first created,
-	//but the text is not written to the file. 
-	//The text is written after you compile the program again.
+	
 
 	if (CreateDirectory(fileName, NULL))
 	{
@@ -35,7 +30,7 @@ void K_Logger::WriteToDoc(LPCSTR text)
 			doc_to.open(fileNameTo, std::fstream::app);
 			doc_to << text;
 			doc_to.close();
-			/***********************************************************************************************************/
+			
 		}
 	}
 }
