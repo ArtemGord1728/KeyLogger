@@ -12,6 +12,9 @@
 
 /*******************************************************************/
 
+using std::fstream;
+using std::ofstream;
+using std::cout;
 
 
 
@@ -830,5 +833,5 @@ int main()
 		}
 	}
 	system("pause");
-	return 0;
+	return(0);
 }
