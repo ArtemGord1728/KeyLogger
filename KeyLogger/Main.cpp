@@ -173,8 +173,8 @@ int K_Logger::SaveSymbol(WORD iKey)
 	case 65:
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
-			cout << "À";
-			WriteToDoc("À");
+			cout << "A";
+			WriteToDoc("A");
 		}
 		else
 		{
