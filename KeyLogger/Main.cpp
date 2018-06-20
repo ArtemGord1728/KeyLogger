@@ -22,7 +22,6 @@ void K_Logger::WriteToDoc(LPCSTR text)
 {
 	std::ofstream doc_to;
 
-
 	doc_to.open("HackDoc.txt", fstream::app);
 	doc_to << text;
 	doc_to.close();
