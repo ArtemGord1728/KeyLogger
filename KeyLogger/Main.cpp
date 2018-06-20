@@ -40,10 +40,6 @@ int K_Logger::SaveSymbol(WORD iKey)
 {
 	switch (iKey)
 	{
-	case 44:
-		cout << ",";
-		break;
-
 	case 48:
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
