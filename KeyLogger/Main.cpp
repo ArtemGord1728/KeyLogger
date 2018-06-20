@@ -829,6 +829,8 @@ void K_Logger::AddToAutorun()
 	}
 }
 
+
+
 int main()
 {
 	setlocale(LC_ALL, "ru");
