@@ -669,16 +669,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 		//+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 	   //+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-	case VK_OEM_1:
-		if (GetAsyncKeyState(VK_SHIFT))
-		{
-			cout << ":";
-		}
-		else
-		{
-			cout << ";";
-		}
-		break;
+
 
 	case VK_LWIN:
 		cout << " Left_Win ";
