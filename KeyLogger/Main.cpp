@@ -19,7 +19,7 @@ void K_Logger::WriteToDoc(LPCSTR text)
 	std::fstream doc_to;
 	string filePath = "D:/HackDoc.txt";
 
-	doc_to.open(filePath, fstream::app);
+	doc_to.open(filePath, fstream::app | fstream::in);
 	doc_to << text;
 	doc_to.close();
 }
