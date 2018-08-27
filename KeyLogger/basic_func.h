@@ -27,8 +27,12 @@
 class K_Logger
 {
 public:
-	void WriteToDoc(const LPCSTR text);
 	int SaveSymbol(WORD iKey);
-	void VisibilityApp();
 	void AddToAutorun();
+
+private:
+	void WriteToDoc(const LPCSTR text);
+
+protected:
+	void VisibilityApp();
 };
