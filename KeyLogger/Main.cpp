@@ -13,7 +13,6 @@
 /*******************************************************************/
 
 using std::fstream;
-using std::ofstream;
 using std::cout;
 using std::string;
 
