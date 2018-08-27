@@ -12,10 +12,6 @@
 
 /*******************************************************************/
 
-using std::fstream;
-using std::cout;
-using std::string;
-
 
 
 void K_Logger::WriteToDoc(LPCSTR text)
