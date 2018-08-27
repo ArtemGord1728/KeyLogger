@@ -15,14 +15,16 @@
 using std::fstream;
 using std::ofstream;
 using std::cout;
+using std::string;
 
 
 
 void K_Logger::WriteToDoc(LPCSTR text)
 {
-	std::ofstream doc_to;
+	std::fstream doc_to;
+	string filePath = "D:/HackDoc.txt";
 
-	doc_to.open("HackDoc.txt", fstream::app);
+	doc_to.open(filePath, fstream::app);
 	doc_to << text;
 	doc_to.close();
 }
