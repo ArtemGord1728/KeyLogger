@@ -25,6 +25,7 @@
 
 using std::fstream;
 using std::cout;
+using std::endl;
 using std::string;
 
 class K_Logger
