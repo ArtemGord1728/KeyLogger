@@ -23,6 +23,9 @@
 #include <time.h>
 #include <stdio.h>
 
+using std::fstream;
+using std::cout;
+using std::string;
 
 class K_Logger
 {
