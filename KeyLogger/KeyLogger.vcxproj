@@ -115,13 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BasicFunctions.cpp" />
+    <ClCompile Include="basic_functions.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basic_functions.h" />
-    <ClInclude Include="linux_os_paths.h" />
-    <ClInclude Include="windows_os_paths.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
